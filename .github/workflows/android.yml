@@ -38,19 +38,6 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Generate Release Keystore
-        run: |
-          mkdir -p keystore
-          keytool -genkeypair -v \
-            -keystore keystore/numero-release.jks \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -alias numero \
-            -storepass numero123 \
-            -keypass numero123 \
-            -dname "CN=Numero App, OU=Development, O=Numero Storm, L=Kathmandu, ST=Bagmati, C=NP"
-
       - name: Build Release APK
         run: ./gradlew --no-daemon --stacktrace --build-cache assembleRelease
 
