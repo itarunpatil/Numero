@@ -67,7 +67,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.LocalContext
+import androidx.lifecycle.viewmodel.compose.LocalViewModelStoreOwner
 import com.numero.storm.domain.calculator.CompatibilityLevel
+import com.numero.storm.domain.calculator.NumerologyConstants
 import com.numero.storm.ui.theme.CompatibilityChallenging
 import com.numero.storm.ui.theme.CompatibilityExcellent
 import com.numero.storm.ui.theme.CompatibilityGood
@@ -214,8 +219,14 @@ fun NumberDisplay(
             .border(2.dp, borderColor, CircleShape),
         contentAlignment = Alignment.Center
     ) {
+        // Format number based on language setting (Nepali or Arabic numerals)
+        val context = LocalContext.current
+        val displayNumber = remember(number) {
+            formatNumberForLocale(number, context)
+        }
+
         Text(
-            text = number.toString(),
+            text = displayNumber,
             fontSize = fontSize,
             fontWeight = FontWeight.Bold,
             color = textColor
@@ -243,6 +254,41 @@ fun NumberDisplay(
 
 enum class NumberDisplaySize {
     SMALL, MEDIUM, LARGE, EXTRA_LARGE
+}
+
+/**
+ * Format a number for display based on current locale/language
+ * Returns Nepali numerals if language is Nepali, otherwise Arabic numerals
+ */
+fun formatNumberForLocale(number: Int, context: android.content.Context): String {
+    return try {
+        // Get the current locale from the context
+        val locale = context.resources.configuration.locales[0]
+        val languageCode = locale.language
+
+        // If Nepali language is selected, convert to Nepali numerals
+        if (languageCode == "ne") {
+            convertToNepaliNumerals(number)
+        } else {
+            number.toString()
+        }
+    } catch (e: Exception) {
+        number.toString()
+    }
+}
+
+/**
+ * Convert an integer to Nepali Devnagari numerals
+ */
+fun convertToNepaliNumerals(number: Int): String {
+    val nepaliNumerals = mapOf(
+        '0' to '०', '1' to '१', '2' to '२', '3' to '३', '4' to '४',
+        '5' to '५', '6' to '६', '7' to '७', '8' to '८', '9' to '९'
+    )
+
+    return number.toString().map { digit ->
+        nepaliNumerals[digit] ?: digit
+    }.joinToString("")
 }
 
 @Composable
