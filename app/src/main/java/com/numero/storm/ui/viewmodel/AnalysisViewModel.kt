@@ -1,7 +1,9 @@
 package com.numero.storm.ui.viewmodel
 
+import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.numero.storm.data.model.AppLanguage
 import com.numero.storm.data.model.ChallengeEntity
 import com.numero.storm.data.model.LifePeriodEntity
 import com.numero.storm.data.model.NumerologyAnalysis
@@ -12,10 +14,13 @@ import com.numero.storm.data.repository.NumerologyRepository
 import com.numero.storm.data.repository.ProfileRepository
 import com.numero.storm.data.repository.SettingsRepository
 import com.numero.storm.domain.calculator.DateCalculator
+import com.numero.storm.domain.calculator.LocalizedInterpretations
 import com.numero.storm.domain.calculator.NumberInterpretation
 import com.numero.storm.domain.calculator.NumerologyInterpretations
 import com.numero.storm.domain.calculator.NumerologySystem
 import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
+import android.content.Context
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -154,6 +159,7 @@ class AnalysisViewModel @Inject constructor(
 
 @HiltViewModel
 class AnalysisDetailViewModel @Inject constructor(
+    @ApplicationContext private val context: Context,
     private val profileRepository: ProfileRepository,
     private val numerologyRepository: NumerologyRepository,
     private val settingsRepository: SettingsRepository
@@ -189,7 +195,7 @@ class AnalysisDetailViewModel @Inject constructor(
                 }
 
                 val (numberValue, isMaster, karmicDebt, interpretation, interpretationText, additionalInfo) =
-                    getNumberDetails(numberType, analysis, profile)
+                    getNumberDetails(numberType, analysis, profile, settings.language)
 
                 _uiState.value = AnalysisDetailUiState(
                     isLoading = false,
@@ -214,14 +220,17 @@ class AnalysisDetailViewModel @Inject constructor(
     private fun getNumberDetails(
         numberType: String,
         analysis: NumerologyAnalysis,
-        profile: Profile
+        profile: Profile,
+        language: AppLanguage
     ): NumberDetails {
         return when (numberType.uppercase()) {
             "LIFE_PATH" -> NumberDetails(
                 numberValue = analysis.lifePathNumber,
                 isMaster = analysis.lifePathMasterNumber,
                 karmicDebt = analysis.lifePathKarmicDebt,
-                interpretation = NumerologyInterpretations.getLifePathInterpretation(analysis.lifePathNumber),
+                interpretation = LocalizedInterpretations.getLocalizedLifePathInterpretation(
+                    context, analysis.lifePathNumber, language
+                ),
                 interpretationText = "",
                 additionalInfo = mapOf(
                     "birthDate" to profile.birthDate.toString()
@@ -232,7 +241,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = analysis.expressionMasterNumber,
                 karmicDebt = analysis.expressionKarmicDebt,
                 interpretation = null,
-                interpretationText = NumerologyInterpretations.getExpressionInterpretation(analysis.expressionNumber),
+                interpretationText = LocalizedInterpretations.getLocalizedExpressionInterpretation(
+                    context, analysis.expressionNumber, language
+                ),
                 additionalInfo = mapOf(
                     "fullName" to profile.fullName
                 )
@@ -242,7 +253,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = analysis.soulUrgeMasterNumber,
                 karmicDebt = analysis.soulUrgeKarmicDebt,
                 interpretation = null,
-                interpretationText = NumerologyInterpretations.getSoulUrgeInterpretation(analysis.soulUrgeNumber),
+                interpretationText = LocalizedInterpretations.getLocalizedSoulUrgeInterpretation(
+                    context, analysis.soulUrgeNumber, language
+                ),
                 additionalInfo = emptyMap()
             )
             "PERSONALITY" -> NumberDetails(
@@ -250,7 +263,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = analysis.personalityMasterNumber,
                 karmicDebt = analysis.personalityKarmicDebt,
                 interpretation = null,
-                interpretationText = NumerologyInterpretations.getPersonalityInterpretation(analysis.personalityNumber),
+                interpretationText = LocalizedInterpretations.getLocalizedPersonalityInterpretation(
+                    context, analysis.personalityNumber, language
+                ),
                 additionalInfo = emptyMap()
             )
             "BIRTHDAY" -> NumberDetails(
@@ -258,7 +273,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = analysis.birthdayMasterNumber,
                 karmicDebt = null,
                 interpretation = null,
-                interpretationText = NumerologyInterpretations.getBirthdayInterpretation(profile.birthDate.dayOfMonth),
+                interpretationText = LocalizedInterpretations.getLocalizedBirthdayInterpretation(
+                    context, profile.birthDate.dayOfMonth, language
+                ),
                 additionalInfo = mapOf(
                     "birthDay" to profile.birthDate.dayOfMonth
                 )
@@ -268,7 +285,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = analysis.maturityMasterNumber,
                 karmicDebt = null,
                 interpretation = null,
-                interpretationText = "Your Maturity Number ${analysis.maturityNumber} represents the true self that emerges in the second half of life. It is the sum of your Life Path (${analysis.lifePathNumber}) and Expression (${analysis.expressionNumber}) numbers, revealing the person you are becoming.",
+                interpretationText = LocalizedInterpretations.getLocalizedMaturityInterpretation(
+                    context, analysis.maturityNumber, language
+                ),
                 additionalInfo = mapOf(
                     "lifePath" to analysis.lifePathNumber,
                     "expression" to analysis.expressionNumber
@@ -279,7 +298,9 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = false,
                 karmicDebt = null,
                 interpretation = null,
-                interpretationText = "Your Balance Number ${analysis.balanceNumber} reveals how you handle difficult situations and find equilibrium during challenging times. It's derived from the initials of your name.",
+                interpretationText = LocalizedInterpretations.getLocalizedBalanceInterpretation(
+                    context, analysis.balanceNumber, language
+                ),
                 additionalInfo = emptyMap()
             )
             "HIDDEN_PASSION" -> NumberDetails(
@@ -287,25 +308,29 @@ class AnalysisDetailViewModel @Inject constructor(
                 isMaster = false,
                 karmicDebt = null,
                 interpretation = null,
-                interpretationText = if (analysis.hiddenPassionNumber != null) {
-                    "Your Hidden Passion Number ${analysis.hiddenPassionNumber} indicates your strongest talents and abilities - the areas where you naturally excel and feel most passionate."
-                } else {
-                    "No clear Hidden Passion number was found in your name. This suggests a balanced distribution of energies across all numbers."
-                },
+                interpretationText = LocalizedInterpretations.getLocalizedHiddenPassionInterpretation(
+                    context, analysis.hiddenPassionNumber, language
+                ),
                 additionalInfo = emptyMap()
             )
             "KARMIC_LESSONS" -> {
                 val lessons = analysis.getKarmicLessonsList()
+                val lessonsText = if (lessons.isEmpty()) {
+                    LocalizedInterpretations.getLocalizedNoKarmicLessons(context, language)
+                } else {
+                    val lessonsInterpretations = lessons.mapNotNull { lessonNum ->
+                        LocalizedInterpretations.getLocalizedKarmicLessonInterpretation(context, lessonNum, language)
+                    }.joinToString("\n\n")
+                    lessonsInterpretations.ifEmpty {
+                        lessons.joinToString(", ")
+                    }
+                }
                 NumberDetails(
                     numberValue = lessons.size,
                     isMaster = false,
                     karmicDebt = null,
                     interpretation = null,
-                    interpretationText = if (lessons.isEmpty()) {
-                        "You have no karmic lessons - all numbers are represented in your name. This indicates a well-rounded nature with access to all fundamental energies."
-                    } else {
-                        "Your Karmic Lessons are: ${lessons.joinToString(", ")}. These numbers are missing from your name and represent areas of growth and learning in this lifetime."
-                    },
+                    interpretationText = lessonsText,
                     additionalInfo = mapOf(
                         "lessons" to lessons.toList()
                     )

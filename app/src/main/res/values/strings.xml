@@ -179,4 +179,525 @@
     <string name="pythagorean_info">Pythagorean: The most widely used Western system where letters A-Z are assigned numbers 1-9 based on their position in the alphabet.</string>
     <string name="chaldean_info">Chaldean: An ancient Babylonian system where letters are assigned numbers 1-8 based on their sound vibration. Number 9 is considered sacred.</string>
     <string name="open_source">Open Source Application</string>
+
+    <!-- Life Path Number Interpretations -->
+    <string name="life_path_1_title">The Leader</string>
+    <string name="life_path_1_meaning">Life Path 1 represents the path of the pioneer and innovator. You are here to develop freedom, individuality, and confidence. Your journey involves becoming self-reliant, initiating projects, and leading others by your example.</string>
+    <string name="life_path_1_strength_1">Natural leadership abilities</string>
+    <string name="life_path_1_strength_2">Strong determination and willpower</string>
+    <string name="life_path_1_strength_3">Original and creative thinking</string>
+    <string name="life_path_1_strength_4">Self-motivation and drive</string>
+    <string name="life_path_1_strength_5">Courage to take initiative</string>
+    <string name="life_path_1_challenge_1">Tendency toward stubbornness</string>
+    <string name="life_path_1_challenge_2">May struggle with collaboration</string>
+    <string name="life_path_1_challenge_3">Risk of becoming domineering</string>
+    <string name="life_path_1_challenge_4">Impatient with others</string>
+    <string name="life_path_1_challenge_5">Fear of failure or dependence</string>
+    <string name="life_path_1_career_1">Entrepreneur</string>
+    <string name="life_path_1_career_2">Executive</string>
+    <string name="life_path_1_career_3">Inventor</string>
+    <string name="life_path_1_career_4">Director</string>
+    <string name="life_path_1_career_5">Freelancer</string>
+    <string name="life_path_1_career_6">Military Leader</string>
+    <string name="life_path_1_relationship">In relationships, you need a partner who respects your independence and keeps your energy in check. Avoid controlling behavior and learn to compromise without losing yourself.</string>
+    <string name="life_path_1_spiritual">Your spiritual lesson is to balance determination with humility. Learn that true leadership comes from serving others, not dominating them.</string>
+    <string name="life_path_1_colors">Red, Gold, Yellow</string>
+    <string name="life_path_1_days">Sunday, Monday</string>
+
+    <string name="life_path_2_title">The Diplomat</string>
+    <string name="life_path_2_meaning">Life Path 2 represents the path of cooperation and harmony. You are here to bring peace, balance, and partnership into the world. Your sensitivity and intuition make you an excellent mediator and supporter.</string>
+    <string name="life_path_2_strength_1">Deep intuition and sensitivity</string>
+    <string name="life_path_2_strength_2">Natural peacemaking abilities</string>
+    <string name="life_path_2_strength_3">Cooperative and diplomatic nature</string>
+    <string name="life_path_2_strength_4">Patience and understanding</string>
+    <string name="life_path_2_strength_5">Strong sense of justice</string>
+    <string name="life_path_2_challenge_1">Extreme sensitivity to criticism</string>
+    <string name="life_path_2_challenge_2">Tendency toward indecisiveness</string>
+    <string name="life_path_2_challenge_3">Can become overly dependent</string>
+    <string name="life_path_2_challenge_4">Difficulty being assertive</string>
+    <string name="life_path_2_challenge_5">Prone to mood swings</string>
+    <string name="life_path_2_career_1">Counselor</string>
+    <string name="life_path_2_career_2">Mediator</string>
+    <string name="life_path_2_career_3">Diplomat</string>
+    <string name="life_path_2_career_4">Social Worker</string>
+    <string name="life_path_2_career_5">Artist</string>
+    <string name="life_path_2_career_6">Healthcare Professional</string>
+    <string name="life_path_2_relationship">Partnership is essential to your happiness. You thrive in committed relationships with mutual respect and emotional support. Avoid losing yourself in your partner\'s needs.</string>
+    <string name="life_path_2_spiritual">Your spiritual path involves developing inner strength while trusting your intuition. Balance serving others with honoring your own needs.</string>
+    <string name="life_path_2_colors">White, Cream, Light Green</string>
+    <string name="life_path_2_days">Monday, Friday</string>
+
+    <string name="life_path_3_title">The Communicator</string>
+    <string name="life_path_3_meaning">Life Path 3 represents the path of creative expression and joy. You are here to inspire others through your words, art, and infectious optimism. Communication in all forms is your gift to the world.</string>
+    <string name="life_path_3_strength_1">Excellent communication skills</string>
+    <string name="life_path_3_strength_2">Natural creativity and artistry</string>
+    <string name="life_path_3_strength_3">Infectious enthusiasm</string>
+    <string name="life_path_3_strength_4">Social charm and charisma</string>
+    <string name="life_path_3_strength_5">Uplifting and inspiring presence</string>
+    <string name="life_path_3_challenge_1">Tendency to scatter energy</string>
+    <string name="life_path_3_challenge_2">May avoid emotional depth</string>
+    <string name="life_path_3_challenge_3">Risk of superficiality</string>
+    <string name="life_path_3_challenge_4">Difficulty with focus</string>
+    <string name="life_path_3_challenge_5">Prone to exaggeration or gossip</string>
+    <string name="life_path_3_career_1">Writer</string>
+    <string name="life_path_3_career_2">Actor</string>
+    <string name="life_path_3_career_3">Musician</string>
+    <string name="life_path_3_career_4">Public Speaker</string>
+    <string name="life_path_3_career_5">Marketing Professional</string>
+    <string name="life_path_3_career_6">Designer</string>
+    <string name="life_path_3_relationship">You bring joy and laughter to relationships but may struggle with emotional depth. Find a partner who appreciates your creativity while helping you stay grounded.</string>
+    <string name="life_path_3_spiritual">Your spiritual journey involves learning that true creativity comes from emotional authenticity. Express the full range of human experience, not just joy.</string>
+    <string name="life_path_3_colors">Yellow, Orange, Pink</string>
+    <string name="life_path_3_days">Wednesday, Thursday</string>
+
+    <string name="life_path_4_title">The Builder</string>
+    <string name="life_path_4_meaning">Life Path 4 represents the path of stability and foundation. You are here to create lasting structures, whether physical, organizational, or conceptual. Your reliability and dedication are the backbone of any endeavor.</string>
+    <string name="life_path_4_strength_1">Exceptional organizational skills</string>
+    <string name="life_path_4_strength_2">Strong work ethic</string>
+    <string name="life_path_4_strength_3">Practical and reliable nature</string>
+    <string name="life_path_4_strength_4">Attention to detail</string>
+    <string name="life_path_4_strength_5">Patience and determination</string>
+    <string name="life_path_4_challenge_1">Tendency toward rigidity</string>
+    <string name="life_path_4_challenge_2">May resist change</string>
+    <string name="life_path_4_challenge_3">Risk of workaholism</string>
+    <string name="life_path_4_challenge_4">Difficulty with spontaneity</string>
+    <string name="life_path_4_challenge_5">Prone to pessimism</string>
+    <string name="life_path_4_career_1">Engineer</string>
+    <string name="life_path_4_career_2">Accountant</string>
+    <string name="life_path_4_career_3">Project Manager</string>
+    <string name="life_path_4_career_4">Architect</string>
+    <string name="life_path_4_career_5">Surgeon</string>
+    <string name="life_path_4_career_6">Systems Analyst</string>
+    <string name="life_path_4_relationship">You provide stability and loyalty in relationships but may struggle with emotional expression. Find a partner who values security while helping you loosen up.</string>
+    <string name="life_path_4_spiritual">Your spiritual lesson is to find freedom within structure. True security comes from within, not from external circumstances.</string>
+    <string name="life_path_4_colors">Green, Brown, Blue</string>
+    <string name="life_path_4_days">Saturday, Sunday</string>
+
+    <string name="life_path_5_title">The Seeker</string>
+    <string name="life_path_5_meaning">Life Path 5 represents the path of change and adventure. You are here to experience all the diversity of life, embracing change as your greatest teacher. Your adaptability and curiosity propel you forward.</string>
+    <string name="life_path_5_strength_1">Exceptional adaptability</string>
+    <string name="life_path_5_strength_2">Natural curiosity</string>
+    <string name="life_path_5_strength_3">Dynamic and engaging presence</string>
+    <string name="life_path_5_strength_4">Quick thinking</string>
+    <string name="life_path_5_strength_5">Resourcefulness</string>
+    <string name="life_path_5_challenge_1">Difficulty with commitment</string>
+    <string name="life_path_5_challenge_2">Tendency toward excess</string>
+    <string name="life_path_5_challenge_3">May avoid responsibility</string>
+    <string name="life_path_5_challenge_4">Restlessness and impatience</string>
+    <string name="life_path_5_challenge_5">Risk of addiction</string>
+    <string name="life_path_5_career_1">Travel Writer</string>
+    <string name="life_path_5_career_2">Sales Representative</string>
+    <string name="life_path_5_career_3">Journalist</string>
+    <string name="life_path_5_career_4">Tour Guide</string>
+    <string name="life_path_5_career_5">Event Planner</string>
+    <string name="life_path_5_career_6">Consultant</string>
+    <string name="life_path_5_relationship">You need freedom in relationships. Find a partner who is independent or adventurous enough to join you on your journey without clinging.</string>
+    <string name="life_path_5_spiritual">Your spiritual path involves learning that true freedom is internal. External experiences are teachers, but wisdom comes from inner reflection.</string>
+    <string name="life_path_5_colors">Turquoise, Light Blue, Silver</string>
+    <string name="life_path_5_days">Wednesday, Friday</string>
+
+    <string name="life_path_6_title">The Nurturer</string>
+    <string name="life_path_6_meaning">Life Path 6 represents the path of love and responsibility. You are here to nurture, heal, and create harmony in your environment. Family, community, and service are central to your purpose.</string>
+    <string name="life_path_6_strength_1">Deep capacity for love</string>
+    <string name="life_path_6_strength_2">Natural healing abilities</string>
+    <string name="life_path_6_strength_3">Strong sense of responsibility</string>
+    <string name="life_path_6_strength_4">Artistic appreciation</string>
+    <string name="life_path_6_strength_5">Protective nature</string>
+    <string name="life_path_6_challenge_1">Tendency toward perfectionism</string>
+    <string name="life_path_6_challenge_2">Can become controlling</string>
+    <string name="life_path_6_challenge_3">Risk of self-sacrifice</string>
+    <string name="life_path_6_challenge_4">Difficulty saying no</string>
+    <string name="life_path_6_challenge_5">Prone to worry</string>
+    <string name="life_path_6_career_1">Teacher</string>
+    <string name="life_path_6_career_2">Nurse</string>
+    <string name="life_path_6_career_3">Interior Designer</string>
+    <string name="life_path_6_career_4">Therapist</string>
+    <string name="life_path_6_career_5">Chef</string>
+    <string name="life_path_6_career_6">Veterinarian</string>
+    <string name="life_path_6_relationship">You are a romantic idealist seeking a beautiful partnership. Be careful not to try to fix or control your partner. Give them their own journey while offering support.</string>
+    <string name="life_path_6_spiritual">Your spiritual lesson is to balance giving and receiving. Learn that nurturing yourself allows you to better nurture others.</string>
+    <string name="life_path_6_colors">Blue, Pink, Green</string>
+    <string name="life_path_6_days">Friday, Thursday</string>
+
+    <string name="life_path_7_title">The Seeker</string>
+    <string name="life_path_7_meaning">Life Path 7 represents the path of knowledge and spiritual awakening. You are here to seek truth, both external and internal. Your analytical mind and intuition combine to pierce illusion.</string>
+    <string name="life_path_7_strength_1">Deep analytical abilities</string>
+    <string name="life_path_7_strength_2">Strong intuition</string>
+    <string name="life_path_7_strength_3">Natural knowledge seeker</string>
+    <string name="life_path_7_strength_4">Technical skill</string>
+    <string name="life_path_7_strength_5">Spiritual awareness</string>
+    <string name="life_path_7_challenge_1">Tendency toward isolation</string>
+    <string name="life_path_7_challenge_2">Can become overly skeptical</string>
+    <string name="life_path_7_challenge_3">Risk of emotional withdrawal</string>
+    <string name="life_path_7_challenge_4">Difficulty trusting others</string>
+    <string name="life_path_7_challenge_5">Prone to escapism</string>
+    <string name="life_path_7_career_1">Scientist</string>
+    <string name="life_path_7_career_2">Philosopher</string>
+    <string name="life_path_7_career_3">Researcher</string>
+    <string name="life_path_7_career_4">Psychologist</string>
+    <string name="life_path_7_career_5">Programmer</string>
+    <string name="life_path_7_career_6">Spiritual Teacher</string>
+    <string name="life_path_7_relationship">You need a partner who respects your need for solitude and intellectual depth. Avoid withdrawing; vulnerability is not weakness.</string>
+    <string name="life_path_7_spiritual">Your spiritual path is naturally inclined toward awareness. Balance intellectual understanding with experiential knowledge through meditation and contemplation.</string>
+    <string name="life_path_7_colors">Purple, Violet, Brown</string>
+    <string name="life_path_7_days">Monday, Saturday</string>
+
+    <string name="life_path_8_title">The Power</string>
+    <string name="life_path_8_meaning">Life Path 8 represents the path of material mastery and authority. You are here to learn responsible use of power, money, and influence. Your capacity for worldly success is immense.</string>
+    <string name="life_path_8_strength_1">Exceptional business acumen</string>
+    <string name="life_path_8_strength_2">Natural authority</string>
+    <string name="life_path_8_strength_3">Strong manifestation abilities</string>
+    <string name="life_path_8_strength_4">Organizational talent</string>
+    <string name="life_path_8_strength_5">Resilience and determination</string>
+    <string name="life_path_8_challenge_1">Tendency toward materialism</string>
+    <string name="life_path_8_challenge_2">Can become ruthless</string>
+    <string name="life_path_8_challenge_3">Risk of workaholism</string>
+    <string name="life_path_8_challenge_4">Difficulty with emotional expression</string>
+    <string name="life_path_8_challenge_5">Prone to power struggles</string>
+    <string name="life_path_8_career_1">CEO</string>
+    <string name="life_path_8_career_2">Financial Advisor</string>
+    <string name="life_path_8_career_3">Real Estate Developer</string>
+    <string name="life_path_8_career_4">Lawyer</string>
+    <string name="life_path_8_career_5">Surgeon</string>
+    <string name="life_path_8_career_6">Banker</string>
+    <string name="life_path_8_relationship">You may struggle to balance work and relationships. Find a partner who is equally ambitious or secure enough to support your drive without feeling neglected.</string>
+    <string name="life_path_8_spiritual">Your spiritual lesson is to use material success as a tool for higher purpose. True power lies in empowering others, not personal accumulation.</string>
+    <string name="life_path_8_colors">Black, Dark Blue, Brown</string>
+    <string name="life_path_8_days">Saturday, Thursday</string>
+
+    <string name="life_path_9_title">The Humanitarian</string>
+    <string name="life_path_9_meaning">Life Path 9 represents the path of universal love and completion. You are here to serve humanity through compassion, wisdom, and selfless giving. Your life embraces all the lessons of numbers 1-8.</string>
+    <string name="life_path_9_strength_1">Deep compassion for humanity</string>
+    <string name="life_path_9_strength_2">Broad perspective</string>
+    <string name="life_path_9_strength_3">Natural charisma</string>
+    <string name="life_path_9_strength_4">Artistic talents</string>
+    <string name="life_path_9_strength_5">Wisdom and insight</string>
+    <string name="life_path_9_challenge_1">Tendency toward martyrdom</string>
+    <string name="life_path_9_challenge_2">May neglect personal needs</string>
+    <string name="life_path_9_challenge_3">Risk of disillusionment</string>
+    <string name="life_path_9_challenge_4">Difficulty with endings</string>
+    <string name="life_path_9_challenge_5">Prone to scattered energy</string>
+    <string name="life_path_9_career_1">Humanitarian Worker</string>
+    <string name="life_path_9_career_2">Artist</string>
+    <string name="life_path_9_career_3">Philanthropist</string>
+    <string name="life_path_9_career_4">Teacher</string>
+    <string name="life_path_9_career_5">Healer</string>
+    <string name="life_path_9_career_6">International Diplomat</string>
+    <string name="life_path_9_relationship">You love deeply but may struggle with personal attachment. Find a partner who shares your humanitarian values while ensuring you also receive love and personal connection.</string>
+    <string name="life_path_9_spiritual">Your spiritual path involves learning to release attachment to life while staying engaged. You are completing a major soul cycle.</string>
+    <string name="life_path_9_colors">Red, Gold, Dark Red</string>
+    <string name="life_path_9_days">Tuesday, Thursday</string>
+
+    <!-- Master Numbers -->
+    <string name="life_path_11_title">The Intuitive Visionary</string>
+    <string name="life_path_11_meaning">Master Number 11 represents the path of spiritual illumination. You amplify the energy of 2 with spiritual insight. You are here to inspire others through your visionary abilities and advanced intuition.</string>
+    <string name="life_path_11_strength_1">Exceptional intuitive abilities</string>
+    <string name="life_path_11_strength_2">Spiritual awareness</string>
+    <string name="life_path_11_strength_3">Inspiring presence</string>
+    <string name="life_path_11_strength_4">Creative perspective</string>
+    <string name="life_path_11_strength_5">Healing abilities</string>
+    <string name="life_path_11_challenge_1">Nervous energy and worry</string>
+    <string name="life_path_11_challenge_2">Can feel misunderstood</string>
+    <string name="life_path_11_challenge_3">Risk of impracticality</string>
+    <string name="life_path_11_challenge_4">Sensitivity to environment</string>
+    <string name="life_path_11_challenge_5">Self-doubt despite abilities</string>
+    <string name="life_path_11_career_1">Spiritual Teacher</string>
+    <string name="life_path_11_career_2">Psychologist or Counselor</string>
+    <string name="life_path_11_career_3">Inspirational Speaker</string>
+    <string name="life_path_11_career_4">Artist</string>
+    <string name="life_path_11_career_5">Consultant</string>
+    <string name="life_path_11_career_6">Film Director</string>
+    <string name="life_path_11_relationship">You need a partner who understands your spiritual nature and sensitivity. Ground your visionary energy through practical expressions of love.</string>
+    <string name="life_path_11_spiritual">You are a channel for higher knowledge. Learn to trust your intuition while staying grounded. Your visions are meant to be shared, not hidden.</string>
+    <string name="life_path_11_colors">White, Silver, Light Blue</string>
+    <string name="life_path_11_days">Monday, Sunday</string>
+
+    <string name="life_path_22_title">The Master Builder</string>
+    <string name="life_path_22_meaning">Master Number 22 represents the Master Builder path. You amplify the energy of 4 with spiritual perspective. You have the potential to manifest large-scale projects that benefit humanity.</string>
+    <string name="life_path_22_strength_1">Ability to manifest visions into reality</string>
+    <string name="life_path_22_strength_2">Exceptional organizational skills</string>
+    <string name="life_path_22_strength_3">Practical idealism</string>
+    <string name="life_path_22_strength_4">Large-scale leadership</string>
+    <string name="life_path_22_strength_5">Disciplined focus</string>
+    <string name="life_path_22_challenge_1">Heavy sense of responsibility</string>
+    <string name="life_path_22_challenge_2">Can feel overwhelmed by possibilities</string>
+    <string name="life_path_22_challenge_3">Risk of nervous exhaustion</string>
+    <string name="life_path_22_challenge_4">Excessive perfectionism</string>
+    <string name="life_path_22_challenge_5">Difficulty with details</string>
+    <string name="life_path_22_career_1">Architect of Major Projects</string>
+    <string name="life_path_22_career_2">International Business Leader</string>
+    <string name="life_path_22_career_3">Political Leader</string>
+    <string name="life_path_22_career_4">Philanthropist</string>
+    <string name="life_path_22_career_5">Engineering Visionary</string>
+    <string name="life_path_22_career_6">Institution Founder</string>
+    <string name="life_path_22_relationship">You need a partner who can align with your vision or at least understand it. Don\'t let grand projects overshadow personal relationships.</string>
+    <string name="life_path_22_spiritual">You are here to build lasting structures that benefit humanity. Balance your material creations with spiritual knowledge.</string>
+    <string name="life_path_22_colors">Coral, White, Gold</string>
+    <string name="life_path_22_days">Saturday, Monday</string>
+
+    <string name="life_path_33_title">The Master Teacher</string>
+    <string name="life_path_33_meaning">Master Number 33 represents the Master Teacher and Healer path. You amplify the energy of 6 with spiritual mastery. You are here to elevate humanity through selfless love and service.</string>
+    <string name="life_path_33_strength_1">Deep healing abilities</string>
+    <string name="life_path_33_strength_2">Selfless dedication to others</string>
+    <string name="life_path_33_strength_3">Spiritual mastery</string>
+    <string name="life_path_33_strength_4">Ability to inspire crowds</string>
+    <string name="life_path_33_strength_5">Boundless compassion</string>
+    <string name="life_path_33_challenge_1">Can over-sacrifice</string>
+    <string name="life_path_33_challenge_2">Risk of martyrdom</string>
+    <string name="life_path_33_challenge_3">Difficulty setting boundaries</string>
+    <string name="life_path_33_challenge_4">Heavy sense of duty</string>
+    <string name="life_path_33_challenge_5">May attract draining people</string>
+    <string name="life_path_33_career_1">Spiritual Leader</string>
+    <string name="life_path_33_career_2">Founder of Humanitarian Organization</string>
+    <string name="life_path_33_career_3">Healer</string>
+    <string name="life_path_33_career_4">Teacher of Teachers</string>
+    <string name="life_path_33_career_5">Counselor</string>
+    <string name="life_path_33_career_6">Philanthropist</string>
+    <string name="life_path_33_relationship">Your love is so vast it can be challenging to contain in one relationship. Find a partner who supports your mission while ensuring you also receive love.</string>
+    <string name="life_path_33_spiritual">You embody love in action. Self-care is not selfish—you need to fill your own cup to pour from it for others.</string>
+    <string name="life_path_33_colors">Turquoise, Green, Pink</string>
+    <string name="life_path_33_days">Friday, Thursday</string>
+
+    <!-- Day/Color Names in English -->
+    <string name="day_sunday">Sunday</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+
+    <string name="color_red">Red</string>
+    <string name="color_gold">Gold</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_white">White</string>
+    <string name="color_cream">Cream</string>
+    <string name="color_light_green">Light Green</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_green">Green</string>
+    <string name="color_brown">Brown</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_turquoise">Turquoise</string>
+    <string name="color_light_blue">Light Blue</string>
+    <string name="color_silver">Silver</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_violet">Violet</string>
+    <string name="color_gray">Gray</string>
+    <string name="color_black">Black</string>
+    <string name="color_dark_blue">Dark Blue</string>
+    <string name="color_crimson">Dark Red</string>
+
+    <!-- Expression Number Interpretations -->
+    <string name="expression_1">Your Expression Number 1 reveals natural talents in leadership and pioneering. You are meant to express originality and independence in everything you do. Your destiny involves creating new paths and inspiring others to follow their own unique vision. You possess an innate ability to lead by example, showing others what is possible when one has the courage to be authentic. Your creative thinking and innovative approach make you a natural trendsetter. Channel these abilities into entrepreneurial ventures, creative projects, or any field where you can be a trailblazer.</string>
+    <string name="expression_2">Your Expression Number 2 shows profound talents in diplomacy and cooperation. You are destined to bring harmony and balance to relationships and environments. Your natural abilities lie in supporting others, mediating conflicts, and creating peaceful atmospheres. You possess an extraordinary sensitivity that allows you to understand unspoken feelings and needs. Your talent for partnership makes you invaluable in collaborative endeavors. The world needs your gentle strength to bridge divides and foster understanding between opposing viewpoints.</string>
+    <string name="expression_3">Your Expression Number 3 indicates exceptional creative and communicative talents. You are meant to express yourself through art, writing, speaking, or any form of creative endeavor. Your destiny involves inspiring joy, optimism, and creative expression in others through your natural gifts. You have an almost magical ability to transform ideas into captivating expressions that touch hearts and minds. Your enthusiasm is contagious, and your presence naturally uplifts any gathering. Use your gifts to entertain, educate, and illuminate the path for others seeking their own creative voice.</string>
+    <string name="expression_4">Your Expression Number 4 reveals powerful practical and organizational talents. You are destined to build lasting foundations in whatever field you choose. Your abilities lie in systematic thinking, meticulous attention to detail, and creating stable structures that stand the test of time. You possess an extraordinary capacity for turning chaos into order and dreams into reality through disciplined effort. Your reliability makes you the person others turn to when they need something done right. Your legacy will be the enduring structures, systems, and institutions you create.</string>
+    <string name="expression_5">Your Expression Number 5 shows remarkable talents in adaptability and progressive communication. You are meant to experience and share life\'s incredible variety with others. Your destiny involves promoting positive change, personal freedom, and progressive ideas. You possess an unusual ability to thrive in changing circumstances that would overwhelm others. Your versatility allows you to connect with diverse people and ideas. Use your restless energy to explore new frontiers and bring back insights that can transform how others see the world.</string>
+    <string name="expression_6">Your Expression Number 6 indicates powerful nurturing and artistic talents. You are destined to create harmony in home, community, and broader society. Your natural abilities lie in healing emotional wounds, teaching with patience, and caring for those in need. You possess an aesthetic sense that can transform any environment into a place of beauty and comfort. Your capacity for unconditional love is your greatest gift. Through your devoted service, you help others recognize their own worth and potential.</string>
+    <string name="expression_7">Your Expression Number 7 reveals deep analytical and spiritual talents. You are meant to seek profound truths and share your wisdom with others. Your destiny involves dedicated research, spiritual exploration, and teaching others what you discover about life\'s mysteries. You possess an exceptional mind that can pierce through surface appearances to underlying realities. Your intuition complements your analytical abilities, giving you access to insights others miss. The knowledge you uncover has the power to transform understanding in your chosen field.</string>
+    <string name="expression_8">Your Expression Number 8 shows extraordinary executive and financial talents. You are destined for significant material achievement and positions of authority. Your abilities lie in strategic organization, business leadership, and manifesting abundance. You possess an innate understanding of how money and power flow, giving you advantages in the material world. Your resilience allows you to bounce back from setbacks that would defeat others. Use your considerable talents to build enterprises that create value and opportunity for many.</string>
+    <string name="expression_9">Your Expression Number 9 indicates profound humanitarian and artistic talents. You are meant to serve humanity on a broad scale through your wisdom and compassion. Your destiny involves demonstrating universal love, contributing to meaningful causes, and helping elevate human consciousness. You possess a rare combination of artistic sensitivity and global awareness. Your broad perspective allows you to see how all people are connected. Through your selfless service, you inspire others to look beyond their own concerns to the needs of the greater community.</string>
+    <string name="expression_11">Your Expression Number 11 reveals exceptional visionary and intuitive talents. As a Master Number, you carry heightened spiritual responsibilities and gifts. You are destined to inspire and illuminate, serving as a channel for higher wisdom. Your abilities lie in receiving spiritual insights, artistic vision, and uplifting others through your inspired presence. Your sensitivity to spiritual energies gives you access to guidance that can benefit many. Trust your visions, for they are meant to be shared with a world hungry for meaning and hope.</string>
+    <string name="expression_22">Your Expression Number 22 shows the ultimate master building talents. As a Master Number, you have the potential to achieve on a grand scale that benefits humanity. You are destined to create lasting institutions, systems, and structures that serve the greater good. Your abilities lie in manifesting visionary ideas into practical reality. You possess both the vision to see what\'s possible and the practical skills to make it happen. Your legacy has the potential to endure for generations, serving as a foundation for human progress.</string>
+    <string name="expression_33">Your Expression Number 33 indicates the highest level of teaching and healing talents. As the Master Teacher number, you embody unconditional love in action. You are destined to heal and uplift humanity through selfless service and spiritual guidance. Your abilities lie in demonstrating what human love can achieve when freed from ego. Your presence alone can be healing to those around you. You carry the potential to inspire transformation in countless lives through your example of devoted service.</string>
+
+    <!-- Soul Urge Number Interpretations -->
+    <string name="soul_urge_1">Your Soul Urge 1 reveals a deep inner desire for independence and personal achievement. At your core, you crave being first, being original, and being recognized for your individual accomplishments. This inner drive pushes you toward leadership positions and pioneering endeavors. You feel most alive when charting your own course and proving your capabilities. Your heart yearns for the freedom to express your unique vision without compromise. Honor this desire by pursuing goals that let you stand out and make your distinctive mark on the world.</string>
+    <string name="soul_urge_2">Your Soul Urge 2 shows a profound inner desire for love, partnership, and deep connection. At your core, you crave harmony, meaningful relationships, and the joy of working cooperatively with others. This inner longing draws you toward partnerships in both love and work. You feel most fulfilled when you are part of a loving union or team. Your heart yearns for someone who truly understands and appreciates your sensitivity. Honor this desire by cultivating relationships where mutual support and emotional intimacy can flourish.</string>
+    <string name="soul_urge_3">Your Soul Urge 3 reveals a deep inner desire for creative expression and joyful living. At your core, you crave artistic fulfillment, social recognition, and the freedom to express yourself fully. This inner longing draws you toward creative pursuits and social gatherings. You feel most alive when you are creating something beautiful or entertaining others. Your heart yearns for an audience that appreciates your unique gifts. Honor this desire by making time for creative expression and surrounding yourself with people who celebrate your light.</string>
+    <string name="soul_urge_4">Your Soul Urge 4 shows a deep inner desire for security, order, and tangible accomplishment. At your core, you crave stability, a solid foundation, and the satisfaction of seeing hard work pay off in concrete results. This inner longing draws you toward building lasting structures in your life. You feel most fulfilled when your environment is organized and your future feels secure. Your heart yearns for the peace that comes from knowing you have built something that will endure. Honor this desire by creating systems and structures that provide genuine security.</string>
+    <string name="soul_urge_5">Your Soul Urge 5 reveals a deep inner desire for freedom, adventure, and variety in all things. At your core, you crave new experiences, constant stimulation, and the liberty to explore life without restrictions. This inner longing draws you toward travel, change, and progressive ideas. You feel most alive when you are discovering something new or breaking free from limitations. Your heart yearns for a life filled with exciting possibilities. Honor this desire by creating a lifestyle that allows for adventure while maintaining the stability needed for true freedom.</string>
+    <string name="soul_urge_6">Your Soul Urge 6 shows a deep inner desire for love, family, and domestic harmony. At your core, you crave a beautiful home, meaningful relationships, and the opportunity to nurture and protect those you love. This inner longing draws you toward creating family, whether biological or chosen. You feel most fulfilled when surrounded by loved ones who appreciate your care. Your heart yearns to create a haven of love and beauty. Honor this desire by investing in relationships and creating spaces where love can flourish.</string>
+    <string name="soul_urge_7">Your Soul Urge 7 reveals a deep inner desire for knowledge, understanding, and spiritual connection. At your core, you crave wisdom, time for reflection, and answers to life\'s deepest questions. This inner longing draws you toward study, meditation, and philosophical inquiry. You feel most alive when you are contemplating life\'s mysteries or discovering hidden truths. Your heart yearns for peace, solitude, and meaningful insight. Honor this desire by creating space for reflection and pursuing knowledge that feeds your soul.</string>
+    <string name="soul_urge_8">Your Soul Urge 8 shows a deep inner desire for success, recognition, and material achievement. At your core, you crave authority, financial abundance, and the respect that comes with accomplishment. This inner longing draws you toward positions of power and material success. You feel most fulfilled when your efforts result in tangible rewards and recognition. Your heart yearns to prove your worth through achievement. Honor this desire by pursuing ambitious goals while remembering that true power serves others.</string>
+    <string name="soul_urge_9">Your Soul Urge 9 reveals a deep inner desire to make a meaningful difference in the world. At your core, you crave contributing to humanity, experiencing universal love, and leaving a legacy that matters. This inner longing draws you toward humanitarian causes and artistic expression. You feel most alive when you are serving others or creating something of lasting beauty. Your heart yearns to ease suffering and elevate consciousness. Honor this desire by finding ways to serve the greater good through your unique talents.</string>
+    <string name="soul_urge_11">Your Soul Urge 11 shows a deep inner desire for spiritual illumination and inspired living. At your core, you crave receiving divine insights, inspiring others, and living a life of profound meaning. This inner longing draws you toward spiritual practices and visionary pursuits. You feel most alive when you are channeling higher wisdom or uplifting others. Your heart yearns to serve as a beacon of light in the darkness. Honor this desire by developing your intuitive gifts and sharing your inspired vision with others.</string>
+    <string name="soul_urge_22">Your Soul Urge 22 reveals a deep inner desire to build something of lasting significance. At your core, you crave manifesting great visions that benefit humanity on a massive scale. This inner longing draws you toward ambitious projects and institution building. You feel most alive when you are transforming visionary ideas into concrete reality. Your heart yearns to leave behind structures that will endure for generations. Honor this desire by pursuing goals worthy of your enormous potential.</string>
+    <string name="soul_urge_33">Your Soul Urge 33 shows a deep inner desire for universal healing and spiritual service. At your core, you crave uplifting humanity through selfless love and devoted guidance. This inner longing draws you toward healing, teaching, and selfless service. You feel most alive when you are helping others transform their lives. Your heart yearns to embody the highest expression of love in action. Honor this desire by dedicating yourself to service while also nurturing yourself.</string>
+
+    <!-- Personality Number Interpretations -->
+    <string name="personality_1">Others perceive you as confident, independent, and a natural leader who knows where they\'re going. You project an image of strength, self-reliance, and pioneering courage that others find inspiring and sometimes intimidating. Your presence commands respect and attention. People expect you to take charge in difficult situations, and they look to you for direction. Your aura of self-assurance makes others believe you can accomplish whatever you set out to do. Use this powerful impression wisely to inspire rather than dominate.</string>
+    <string name="personality_2">Others perceive you as cooperative, diplomatic, and supportively gentle. You project an image of warmth and approachability that immediately puts people at ease. Your presence creates a sense of safety and understanding. People feel they can confide in you and trust you with their sensitive concerns. Your aura of peaceful receptivity makes others want to open up and share their thoughts with you. Use this natural gift to build bridges between people and create harmony wherever you go.</string>
+    <string name="personality_3">Others perceive you as creative, charming, and infectiously optimistic. You project an image of joy, enthusiasm, and social sophistication that naturally attracts attention. Your presence lights up any room and lifts the energy of those around you. People expect entertainment, inspiration, and creative solutions from you. Your aura of playful creativity makes gatherings more enjoyable when you\'re present. Use your natural charm to spread joy while also sharing your deeper insights when appropriate.</string>
+    <string name="personality_4">Others perceive you as reliable, practical, and extraordinarily hardworking. You project an image of stability, trustworthiness, and solid dependability that people count on. Your presence reassures others that everything is under control. People expect you to follow through on commitments and handle details others miss. Your aura of competent reliability makes you the person others turn to when they need something done right. Use this trust to build lasting foundations for yourself and others.</string>
+    <string name="personality_5">Others perceive you as dynamic, adventurous, and excitingly versatile. You project an image of freedom, progressive thinking, and magnetic charisma that intrigues those around you. Your presence brings a sense of excitement and possibility to any situation. People expect you to have fascinating stories and unconventional ideas. Your aura of restless energy makes life seem more interesting when you\'re around. Use this magnetic quality to inspire others to embrace change and growth.</string>
+    <string name="personality_6">Others perceive you as nurturing, responsible, and artistically refined. You project an image of warmth, domesticity, and protective care that makes people feel loved and valued. Your presence creates a sense of home and belonging wherever you go. People expect you to care about their well-being and notice when something is wrong. Your aura of loving responsibility makes others feel safe in your care. Use this natural warmth to create beauty and harmony in your environment.</string>
+    <string name="personality_7">Others perceive you as intelligent, reserved, and mysteriously deep. You project an image of wisdom, thoughtfulness, and spiritual depth that commands respect. Your presence suggests hidden knowledge and profound understanding. People expect you to have insights others lack and answers to difficult questions. Your aura of quiet contemplation makes others curious about what you\'re thinking. Use this natural mystique to draw others toward deeper understanding.</string>
+    <string name="personality_8">Others perceive you as powerful, successful, and naturally authoritative. You project an image of capability, ambition, and material mastery that impresses and sometimes intimidates. Your presence commands respect in professional settings. People expect you to be competent, decisive, and successful in your endeavors. Your aura of confident authority makes others want to follow your lead or do business with you. Use this power responsibly to create opportunities for others as well as yourself.</string>
+    <string name="personality_9">Others perceive you as compassionate, sophisticated, and worldly wise. You project an image of humanitarian concern, cultural refinement, and philosophical depth that inspires trust. Your presence suggests someone who has seen much of life and learned from it. People expect you to be understanding, tolerant, and concerned with the greater good. Your aura of compassionate wisdom makes others feel understood and accepted. Use this natural authority to guide others toward their highest potential.</string>
+    <string name="personality_11">Others perceive you as inspirational, deeply intuitive, and spiritually gifted. You project an image of visionary insight and elevated consciousness that fascinates and uplifts. Your presence seems to carry an otherworldly quality that draws spiritual seekers. People expect you to have access to wisdom beyond ordinary understanding. Your aura of inspired awareness makes others feel they are in the presence of something special. Use this gift to illuminate the path for those who are ready for deeper truth.</string>
+    <string name="personality_22">Others perceive you as enormously capable, disciplined, and blessed with extraordinary vision. You project an image of someone who can accomplish great things through sustained effort. Your presence suggests a master builder who can manifest dreams into reality. People expect you to take on large-scale projects and succeed where others would fail. Your aura of practical idealism inspires confidence in ambitious endeavors. Use this impression to rally others around worthy causes.</string>
+    <string name="personality_33">Others perceive you as loving, healing, and selflessly devoted to the welfare of all. You project an image of spiritual mastery and unconditional love that touches hearts. Your presence seems to radiate healing energy that soothes troubled souls. People expect you to embody compassion and provide guidance in times of need. Your aura of divine love makes others feel blessed to be near you. Use this sacred gift to heal and elevate humanity through your devoted presence.</string>
+
+    <!-- Birthday Number Interpretations (1-31) -->
+    <string name="birthday_1">Born on the 1st, you carry the energy of new beginnings and leadership. You have natural leadership abilities and a strong independent streak that sets you apart. You are a pioneer at heart, willing to venture where others fear to tread. Your innovative thinking and courage to act alone make you a natural initiator. Trust your instincts and don\'t be afraid to stand out from the crowd.</string>
+    <string name="birthday_2">Born on the 2nd, you carry the energy of partnership and diplomacy. You are naturally cooperative and diplomatic, with an intuitive understanding of others\' feelings. Partnership and harmony are essential to your well-being and success. Your sensitivity and tact make you invaluable in any team or relationship. Cultivate your natural peacemaking abilities while honoring your own needs.</string>
+    <string name="birthday_3">Born on the 3rd, you carry the energy of creative expression and joy. You have natural creative and communicative abilities that demand expression. Self-expression through art, writing, or speaking is your gift to the world. Your enthusiasm and charm make you a natural entertainer. Don\'t let the weight of responsibility dim your creative light.</string>
+    <string name="birthday_4">Born on the 4th, you carry the energy of stability and foundation. You have strong organizational abilities and a practical nature that others rely upon. You build solid foundations in everything you undertake. Your attention to detail and persistence ensure lasting results. Balance your dedication to work with time for relaxation and pleasure.</string>
+    <string name="birthday_5">Born on the 5th, you carry the energy of freedom and change. You have natural versatility and a love of freedom that keeps life exciting. Change energizes you rather than frightening you. Your adaptability and curiosity open doors that remain closed to others. Use your restless energy constructively while maintaining necessary commitments.</string>
+    <string name="birthday_6">Born on the 6th, you carry the energy of love and responsibility. You have strong nurturing instincts and artistic appreciation that enrich your environment. Home and family matter deeply to your sense of fulfillment. Your capacity for love and service makes you the heart of any group. Balance caring for others with attention to your own needs.</string>
+    <string name="birthday_7">Born on the 7th, you carry the energy of wisdom and spirituality. You have natural analytical abilities and spiritual inclinations that set you on a quest for truth. You seek deeper meaning in everything you encounter. Your intuition and intellect combine to give you rare insights. Trust your inner knowing while staying connected to practical reality.</string>
+    <string name="birthday_8">Born on the 8th, you carry the energy of power and abundance. You have strong business instincts and executive abilities that can lead to material success. Achievement and recognition are natural goals for you. Your determination and organizational skills create impressive results. Use your power responsibly and generously.</string>
+    <string name="birthday_9">Born on the 9th, you carry the energy of completion and humanitarianism. You have natural humanitarian instincts and broad vision that extend beyond personal concerns. You think globally and care about the welfare of all. Your compassion and wisdom make you a natural counselor. Balance your concern for the world with attention to personal relationships.</string>
+    <string name="birthday_10">Born on the 10th, you are a natural leader with creative flair. You combine the independence of 1 with the completeness of 0. Independence with cooperation is your path to success. Your originality and determination make you stand out. Trust your unique vision while remaining open to collaboration.</string>
+    <string name="birthday_11">Born on the 11th, you carry Master Number energy of spiritual illumination. You have heightened intuition and inspirational abilities that can influence many. You are meant to illuminate and inspire. Your sensitivity to spiritual energies gives you access to profound insights. Ground your visionary nature through practical action.</string>
+    <string name="birthday_12">Born on the 12th, you combine creativity with practicality in unique ways. Expression through structured channels is your gift. Your artistic abilities work best when given form and discipline. Balance creative freedom with practical organization for best results. Your charm and versatility open many doors.</string>
+    <string name="birthday_13">Born on the 13th, you have the ability to transform through discipline and focused effort. Hard work leads to creative breakthroughs in your life. This karmic number teaches that steady effort overcomes all obstacles. Your persistence and practical skills create lasting success. Trust the process and don\'t take shortcuts.</string>
+    <string name="birthday_14">Born on the 14th, you seek growth through change and varied experiences. Balance adventure with responsibility for best results. This karmic number teaches that true freedom comes through self-discipline. Your adaptability and communication skills open unusual opportunities. Avoid excesses while embracing life\'s variety.</string>
+    <string name="birthday_15">Born on the 15th, you have magnetic charm and exceptional domestic talents. Creating beauty in relationships comes naturally to you. Your nurturing abilities extend to making any environment more beautiful. Love and family are central to your happiness. Use your artistic gifts to enhance the lives of those you love.</string>
+    <string name="birthday_16">Born on the 16th, you seek spiritual depth through introspection and life experience. Inner wisdom comes through meeting life\'s challenges with courage. This karmic number teaches that true wisdom emerges from ego surrender. Your analytical mind can unlock spiritual mysteries. Trust that difficulties are doorways to deeper understanding.</string>
+    <string name="birthday_17">Born on the 17th, you combine spiritual insight with business acumen in powerful ways. Material success serves higher purpose in your life. Your intuition enhances your practical abilities, giving you advantages in business. You can achieve both worldly success and spiritual growth. Use your achievements to benefit others as well as yourself.</string>
+    <string name="birthday_18">Born on the 18th, you have leadership abilities combined with humanitarian vision. Power should serve the greater good in your hands. Your broad perspective and executive abilities can influence many lives. You are meant to lead in ways that benefit society. Balance personal ambition with service to others.</string>
+    <string name="birthday_19">Born on the 19th, you are learning independence through varied life experiences. Self-reliance is your ultimate lesson and achievement. This karmic number teaches that you must stand on your own before you can truly help others. Your determination and courage will be tested and strengthened. Trust your ability to overcome any obstacle.</string>
+    <string name="birthday_20">Born on the 20th, you have heightened sensitivity and exceptional partnership abilities. Cooperation is your greatest strength. Your intuition about others\' feelings makes you invaluable in relationships. You achieve through supporting and harmonizing rather than leading. Trust your gentle approach to create powerful results.</string>
+    <string name="birthday_21">Born on the 21st, you have strong creative and social abilities that demand expression. Self-expression brings success and fulfillment. Your charm, creativity, and communication skills create opportunities. Social settings are your natural arena for success. Use your gifts to entertain, inspire, and connect people.</string>
+    <string name="birthday_22">Born on the 22nd, you carry Master Number energy with builder potential. Large-scale achievements are possible with discipline and vision. You have the ability to manifest great dreams into practical reality. Your organizational abilities can influence institutions. Think big and take practical steps toward your vision.</string>
+    <string name="birthday_23">Born on the 23rd, you have versatile communication skills and need for self-expression. Freedom of expression is essential to your happiness. Your quick mind and social abilities create many opportunities. You thrive in environments that allow variety and change. Use your communicative gifts to inspire positive change.</string>
+    <string name="birthday_24">Born on the 24th, you have strong family orientation and practical nurturing skills. Creating harmony in domestic life comes naturally. Your combination of caring and competence makes you the heart of any home. You find fulfillment through service to loved ones. Balance family devotion with personal growth.</string>
+    <string name="birthday_25">Born on the 25th, you have intuitive and analytical abilities that complement each other. Wisdom comes through quiet reflection and study. Your combination of logic and intuition gives you unique insights. You need time alone to process your deep thoughts. Trust your inner knowing while gathering practical knowledge.</string>
+    <string name="birthday_26">Born on the 26th, you have business abilities focused on supporting family and community. Material success supports loved ones in your vision. Your combination of ambition and caring creates stable prosperity. You work hard to provide security for those you love. Balance worldly achievements with domestic happiness.</string>
+    <string name="birthday_27">Born on the 27th, you have compassion combined with analytical skills for healing. Healing through understanding is your unique gift. Your combination of sensitivity and intellect helps others transform. You can see both the emotional and logical aspects of any situation. Use your insights to guide others toward wholeness.</string>
+    <string name="birthday_28">Born on the 28th, you have leadership abilities with humanitarian vision. Independence serves the greater good in your approach. Your combination of self-reliance and compassion creates effective leadership. You can achieve personal success while benefiting others. Lead by example and inspire others to their highest potential.</string>
+    <string name="birthday_29">Born on the 29th, you have heightened intuition and sensitivity to spiritual energies. Spiritual service is your calling and fulfillment. Your psychic abilities and compassion draw you toward helping professions. You are meant to serve as a bridge between spiritual and material worlds. Trust your visions while staying grounded in practical reality.</string>
+    <string name="birthday_30">Born on the 30th, you have creative and expressive abilities that demand an outlet. Artistic expression brings fulfillment and joy. Your creativity and social skills create many opportunities for self-expression. You have the ability to entertain and inspire through your art. Don\'t let practical concerns suppress your creative gifts.</string>
+    <string name="birthday_31">Born on the 31st, you have practical creativity that builds lasting value. Building through artistic or technical means is your path. Your combination of creativity and discipline produces tangible results. You can transform imaginative ideas into concrete achievements. Use your skills to create things of lasting beauty and utility.</string>
+
+    <!-- Personal Year Interpretations -->
+    <string name="personal_year_1">Personal Year 1 marks the beginning of a new nine-year cycle in your life. This is a powerful year for new beginnings, fresh starts, and planting seeds for the future. Take initiative, assert your independence, and don\'t be afraid to stand out. The energy supports starting new projects, careers, or relationships. What you begin this year sets the foundation for the next nine years. Act with courage and vision. This is your year to pioneer, innovate, and lead.</string>
+    <string name="personal_year_2">Personal Year 2 focuses on patience, cooperation, and developing what you started. This is a year to nurture relationships, practice diplomacy, and exercise patience. Avoid forcing results; instead, trust the process of growth. Partnerships and collaborations are favored. Your intuition is heightened, so trust your inner guidance. Details matter this year, so pay attention to the small things. This is your year to cooperate, support, and let things unfold naturally.</string>
+    <string name="personal_year_3">Personal Year 3 brings creativity, self-expression, and social expansion to the forefront. This is a year to express yourself, enjoy life, and expand your social circle. Creative projects flourish under this energy. Social opportunities increase, and romance may blossom. Be careful not to scatter your energy in too many directions. This is your year to create, communicate, and celebrate life\'s pleasures.</string>
+    <string name="personal_year_4">Personal Year 4 requires discipline, hard work, and attention to practical matters. This is a year to build solid foundations through dedicated effort. Focus on organization, systems, and long-term planning. Health matters need attention this year. The rewards for your efforts may seem delayed but are building solidly. This is your year to work, build, and create lasting security.</string>
+    <string name="personal_year_5">Personal Year 5 brings change, adventure, and unexpected opportunities. This is a year to embrace change, seek new experiences, and allow flexibility in your plans. Travel is favored, as are changes in career or living situation. Expect the unexpected and stay adaptable. Avoid impulsive decisions while remaining open to new possibilities. This is your year to change, grow, and expand your horizons.</string>
+    <string name="personal_year_6">Personal Year 6 centers on home, family, and community responsibilities. This is a year to deepen family bonds, improve your living situation, and serve others. Relationships require attention and may deepen significantly. Creative expression, especially related to beauty and harmony, is favored. You may take on more responsibility for others\' welfare. This is your year to nurture, beautify, and strengthen family ties.</string>
+    <string name="personal_year_7">Personal Year 7 calls for reflection, inner development, and spiritual growth. This is a year to step back from worldly pursuits and focus on inner work. Study, meditation, and contemplation are favored. Trust your intuition, which is particularly strong this year. Health needs attention on physical and mental levels. This is your year to reflect, learn, and connect with your spiritual nature.</string>
+    <string name="personal_year_8">Personal Year 8 brings material opportunities, karmic rewards, and tests of power. This is a year when past efforts bear fruit and material success is possible. Business matters are favored, and financial decisions carry extra weight. You may achieve recognition or advancement in your career. Be mindful of how you handle power and resources. This is your year to achieve, prosper, and handle success responsibly.</string>
+    <string name="personal_year_9">Personal Year 9 marks endings, completion, and preparation for new beginnings. This is a year to release what no longer serves you and tie up loose ends. Let go of relationships, situations, or beliefs that have run their course. Practice forgiveness and closure. Clear space for the new cycle beginning next year. This is your year to complete, release, and prepare for transformation.</string>
+
+    <!-- Personal Month Interpretations -->
+    <string name="personal_month_1">This is a month for new beginnings and taking initiative. Start new projects, make fresh starts, and assert your independence. Your energy for pioneering efforts is heightened.</string>
+    <string name="personal_month_2">This is a month for patience, cooperation, and attending to details. Focus on partnerships and diplomacy. Let things develop naturally without forcing.</string>
+    <string name="personal_month_3">This is a month for creativity and self-expression. Social activities are favored. Express yourself through art, writing, or communication.</string>
+    <string name="personal_month_4">This is a month for hard work and building foundations. Focus on practical matters and organization. Discipline brings results.</string>
+    <string name="personal_month_5">This is a month for change and new experiences. Expect the unexpected and remain flexible. Travel and adventure are favored.</string>
+    <string name="personal_month_6">This is a month for family and home matters. Focus on relationships and domestic responsibilities. Service to others is highlighted.</string>
+    <string name="personal_month_7">This is a month for reflection and inner development. Seek solitude for study and meditation. Trust your intuition.</string>
+    <string name="personal_month_8">This is a month for material matters and achievement. Business decisions are important. Financial opportunities may arise.</string>
+    <string name="personal_month_9">This is a month for completion and release. Let go of what\'s finished. Prepare for endings and new beginnings.</string>
+
+    <!-- Personal Day Interpretations -->
+    <string name="personal_day_1">Today favors new beginnings and independent action. Take initiative and start fresh projects.</string>
+    <string name="personal_day_2">Today favors cooperation and patience. Focus on partnerships and attend to details.</string>
+    <string name="personal_day_3">Today favors creativity and social interaction. Express yourself and enjoy life.</string>
+    <string name="personal_day_4">Today favors practical work and organization. Focus on building and attention to detail.</string>
+    <string name="personal_day_5">Today favors change and flexibility. Expect surprises and embrace variety.</string>
+    <string name="personal_day_6">Today favors home and family matters. Focus on relationships and domestic harmony.</string>
+    <string name="personal_day_7">Today favors quiet reflection and study. Seek solitude and trust your intuition.</string>
+    <string name="personal_day_8">Today favors business and material matters. Focus on achievement and financial decisions.</string>
+    <string name="personal_day_9">Today favors completion and letting go. Release what\'s finished and practice compassion.</string>
+
+    <!-- Karmic Debt Interpretations -->
+    <string name="karmic_debt_13">Karmic Debt 13 indicates lessons around work, discipline, and overcoming laziness from past lives. This karmic energy requires dedicated hard work and persistence in everything you do. Success comes through honest effort, never through shortcuts or manipulation. When progress seems slow, maintain faith in the process. The reward for this karmic lesson is the development of true competence and the satisfaction of earned achievement. Transform this debt by embracing discipline and following through on all commitments.</string>
+    <string name="karmic_debt_14">Karmic Debt 14 indicates lessons around freedom, self-discipline, and moderation from past lives. This karmic energy requires learning to balance freedom with responsibility. Avoid addiction, excessive indulgence, and commitmentphobia. True freedom comes not from having no constraints, but from self-mastery. The reward for this karmic lesson is the ability to enjoy life\'s pleasures in healthy moderation. Transform this debt by committing fully to worthy goals while enjoying variety within structure.</string>
+    <string name="karmic_debt_16">Karmic Debt 16 indicates lessons around ego, relationships, and spiritual pride from past lives. This karmic energy often brings unexpected upheavals that destroy false pride and superficial identity. These challenges are opportunities for spiritual growth and authentic connection. True wisdom emerges from ego surrender. The reward for this karmic lesson is the development of genuine humility and deep spiritual awareness. Transform this debt by embracing challenges as teachers and releasing attachment to how others see you.</string>
+    <string name="karmic_debt_19">Karmic Debt 19 indicates lessons around independence, power, and helping others from past lives. This karmic energy requires learning to balance self-reliance with cooperative service. Avoid both excessive dependence and selfish use of power. True leadership serves others rather than self. The reward for this karmic lesson is the development of healthy independence that uplifts others. Transform this debt by standing on your own while reaching back to help those behind you.</string>
+
+    <!-- Karmic Lesson Interpretations -->
+    <string name="karmic_lesson_1">Missing 1 in your name suggests a need to develop independence, initiative, and leadership abilities. You may shy away from standing out or taking charge. Your soul growth involves learning to assert yourself and trust your own judgment. Practice making decisions without seeking approval. Take leadership roles even when uncomfortable. The lesson is to develop healthy self-reliance and the courage to be original.</string>
+    <string name="karmic_lesson_2">Missing 2 in your name suggests a need to develop patience, cooperation, and sensitivity to others. You may struggle with partnerships or diplomacy. Your soul growth involves learning to collaborate and consider others\' feelings. Practice active listening and compromise. The lesson is to develop genuine partnership skills and emotional awareness.</string>
+    <string name="karmic_lesson_3">Missing 3 in your name suggests a need to develop self-expression, creativity, and social confidence. You may suppress your creative side or feel uncomfortable in social situations. Your soul growth involves learning to express yourself freely and enjoy life. Practice creative activities and social engagement. The lesson is to develop joyful self-expression and creative confidence.</string>
+    <string name="karmic_lesson_4">Missing 4 in your name suggests a need to develop discipline, organization, and practical skills. You may avoid hard work or struggle with follow-through. Your soul growth involves learning to build solid foundations through dedicated effort. Practice organization and consistent work habits. The lesson is to develop reliable competence and appreciation for steady effort.</string>
+    <string name="karmic_lesson_5">Missing 5 in your name suggests a need to develop adaptability, freedom, and openness to change. You may resist change or limit your experiences. Your soul growth involves learning to embrace variety and handle unexpected situations. Practice flexibility and seek new experiences. The lesson is to develop comfortable adaptability and healthy freedom-seeking.</string>
+    <string name="karmic_lesson_6">Missing 6 in your name suggests a need to develop responsibility, nurturing, and commitment to relationships. You may avoid domestic duties or struggle with commitments. Your soul growth involves learning to care for others and create harmony. Practice taking responsibility and nurturing relationships. The lesson is to develop loving service and domestic harmony.</string>
+    <string name="karmic_lesson_7">Missing 7 in your name suggests a need to develop analytical thinking, spiritual awareness, and comfort with solitude. You may avoid introspection or spiritual questions. Your soul growth involves learning to reflect deeply and trust your intuition. Practice meditation and intellectual study. The lesson is to develop inner wisdom and spiritual connection.</string>
+    <string name="karmic_lesson_8">Missing 8 in your name suggests a need to develop practical business skills, authority, and healthy relationship with money. You may avoid responsibility for finances or leadership positions. Your soul growth involves learning to handle material resources effectively. Practice financial responsibility and accept positions of authority. The lesson is to develop material mastery and confident leadership.</string>
+    <string name="karmic_lesson_9">Missing 9 in your name suggests a need to develop compassion, broad perspective, and humanitarian concern. You may focus too much on personal concerns. Your soul growth involves learning to think of the greater good and release attachment. Practice generosity and concern for others beyond your immediate circle. The lesson is to develop universal love and wisdom.</string>
+
+    <!-- Pinnacle Interpretations -->
+    <string name="pinnacle_1">First Pinnacle with vibration 1 emphasizes developing independence and leadership abilities. This is a time to establish your individual identity and learn to stand on your own. Take initiative and don\'t be afraid to pioneer new approaches.</string>
+    <string name="pinnacle_2">This Pinnacle with vibration 2 emphasizes cooperation, patience, and relationship development. This is a time to learn diplomacy and work with others. Pay attention to details and trust the timing of things.</string>
+    <string name="pinnacle_3">This Pinnacle with vibration 3 emphasizes creative self-expression and social expansion. This is a time to develop your creative gifts and enjoy life. Social opportunities abound during this period.</string>
+    <string name="pinnacle_4">This Pinnacle with vibration 4 emphasizes hard work, discipline, and building foundations. This is a time to develop practical skills and work ethic. Patience and persistence are essential.</string>
+    <string name="pinnacle_5">This Pinnacle with vibration 5 emphasizes change, freedom, and expanding experiences. This is a time for adventure and adaptation. Embrace change and seek variety in your experiences.</string>
+    <string name="pinnacle_6">This Pinnacle with vibration 6 emphasizes family, home, and responsibility to others. This is a time to nurture relationships and create harmony. Domestic matters take center stage.</string>
+    <string name="pinnacle_7">This Pinnacle with vibration 7 emphasizes inner development and spiritual growth. This is a time for study, reflection, and developing intuition. Seek answers within rather than without.</string>
+    <string name="pinnacle_8">This Pinnacle with vibration 8 emphasizes material achievement and handling power. This is a time for career advancement and financial growth. Handle success and power responsibly.</string>
+    <string name="pinnacle_9">This Pinnacle with vibration 9 emphasizes completion, humanitarian service, and letting go. This is a time to serve others and release attachments. Practice compassion and prepare for endings.</string>
+    <string name="pinnacle_11">This Pinnacle with Master Number 11 emphasizes spiritual illumination and inspiration. This is a time when your intuition is heightened and you can inspire others. Trust your visions and share your insights.</string>
+    <string name="pinnacle_22">This Pinnacle with Master Number 22 emphasizes manifesting large-scale visions. This is a time when you can build something of lasting significance. Use your practical abilities to serve humanity.</string>
+
+    <!-- Challenge Interpretations -->
+    <string name="challenge_0">Challenge 0 represents the challenge of all numbers combined. You may face any type of challenge during this period. This is an opportunity to develop balance across all areas of life.</string>
+    <string name="challenge_1">Challenge 1 involves learning healthy independence and assertiveness. You may struggle with standing up for yourself or taking initiative. Develop courage to be your own person.</string>
+    <string name="challenge_2">Challenge 2 involves learning patience, cooperation, and handling sensitivity. You may struggle with partnerships or being overly affected by criticism. Develop diplomatic skills.</string>
+    <string name="challenge_3">Challenge 3 involves learning focused self-expression and emotional depth. You may scatter your energy or avoid serious emotions. Develop disciplined creativity.</string>
+    <string name="challenge_4">Challenge 4 involves learning discipline, organization, and practical effort. You may struggle with hard work or attention to detail. Develop patience and persistence.</string>
+    <string name="challenge_5">Challenge 5 involves learning to handle change and use freedom responsibly. You may struggle with commitment or adapting to change. Develop healthy flexibility.</string>
+    <string name="challenge_6">Challenge 6 involves learning balanced responsibility and avoiding perfectionism. You may struggle with domestic duties or trying to control others. Develop accepting love.</string>
+    <string name="challenge_7">Challenge 7 involves learning to trust your intuition and handle solitude. You may struggle with introspection or faith. Develop spiritual connection.</string>
+    <string name="challenge_8">Challenge 8 involves learning to handle money, power, and material concerns. You may struggle with finances or authority. Develop responsible material mastery.</string>
+
+    <!-- Compatibility Interpretations -->
+    <string name="compatibility_1_1">Two 1s together create a powerful but challenging dynamic. Both need independence and may compete for leadership. Success requires mutual respect and separate domains of authority.</string>
+    <string name="compatibility_1_2">1 and 2 can complement each other beautifully. The 1 provides leadership while the 2 offers support. The 2 must not be dominated, and the 1 must appreciate the 2\'s contributions.</string>
+    <string name="compatibility_1_5">1 and 5 share a love of freedom and change. Both are independent and exciting. Together you can have amazing adventures, but must guard against restlessness.</string>
+    <string name="compatibility_2_6">2 and 6 share nurturing, harmonious energy. Both value relationships and domestic happiness. This is a naturally compatible combination for lasting partnership.</string>
+    <string name="compatibility_3_6">3 and 6 share creative and harmonious energy. The 6 provides stability while the 3 adds joy. A supportive combination for artistic and domestic fulfillment.</string>
+    <string name="compatibility_4_8">4 and 8 share practical, ambitious energy. Both value hard work and material success. Together you can build impressive achievements, but must make time for relationship.</string>
+    <string name="compatibility_7_9">7 and 9 share spiritual and philosophical interests. The 7 seeks inner wisdom while the 9 serves humanity. A deep combination for spiritual partnership.</string>
+
+    <!-- Health Guidance by Life Path -->
+    <string name="health_life_path_1">Life Path 1 individuals should watch for stress-related issues from pushing too hard. Head, heart, and blood pressure need attention. Balance ambition with rest and relaxation. Physical activity helps channel your dynamic energy positively.</string>
+    <string name="health_life_path_2">Life Path 2 individuals should watch for issues related to suppressed emotions. Digestive system and nervous system need attention. Stress management through gentle activities like yoga helps. Avoid absorbing others\' emotional energy.</string>
+    <string name="health_life_path_3">Life Path 3 individuals should watch for scattered energy and throat issues. Creative expression is essential for emotional health. Avoid overindulgence in food, drink, or social activities. Channel your energy through artistic pursuits.</string>
+    <string name="health_life_path_4">Life Path 4 individuals should watch for issues from overwork and rigidity. Back, joints, and skeletal system need attention. Balance work with relaxation and flexibility exercises. Don\'t let worry undermine your health.</string>
+    <string name="health_life_path_5">Life Path 5 individuals should watch for issues from restlessness and excess. Nervous system and lungs need attention. Avoid addictive substances and behaviors. Regular routines help balance your need for variety.</string>
+    <string name="health_life_path_6">Life Path 6 individuals should watch for issues from worry and over-responsibility. Heart and chest area need attention. Practice setting boundaries and self-care. Your health depends on not carrying everyone else\'s burdens.</string>
+    <string name="health_life_path_7">Life Path 7 individuals should watch for issues from isolation and overthinking. Skin and nervous system need attention. Physical activity grounds your mental energy. Balance solitude with connection.</string>
+    <string name="health_life_path_8">Life Path 8 individuals should watch for issues from stress and overwork. Blood pressure and circulatory system need attention. Make time for relaxation despite ambition. Financial stress can affect physical health.</string>
+    <string name="health_life_path_9">Life Path 9 individuals should watch for issues from emotional absorption. Immune system and vitality need attention. Learn to release what you absorb from others. Charitable work feeds your soul but must be balanced.</string>
+
+    <!-- Maturity Number Interpretations -->
+    <string name="maturity_number_interpretation">Your Maturity Number represents the true self that emerges in the second half of life. It is the sum of your Life Path and Expression numbers, revealing the person you are becoming as you gain wisdom and experience.</string>
+    <string name="maturity_1">Your Maturity Number 1 indicates you will become more independent and self-reliant as you mature. Leadership abilities will strengthen, and you will feel driven to pioneer new paths and stand confidently in your individuality.</string>
+    <string name="maturity_2">Your Maturity Number 2 indicates you will become more diplomatic and partnership-oriented as you mature. Your sensitivity and intuition will deepen, and relationships will become central to your fulfillment.</string>
+    <string name="maturity_3">Your Maturity Number 3 indicates you will become more creative and expressive as you mature. Joy, optimism, and artistic abilities will flourish, and communication will become your greatest gift.</string>
+    <string name="maturity_4">Your Maturity Number 4 indicates you will become more grounded and practical as you mature. Building stable foundations and creating lasting structures will bring deep satisfaction in later life.</string>
+    <string name="maturity_5">Your Maturity Number 5 indicates you will become more adventurous and freedom-loving as you mature. Embrace change and variety; your later years will be filled with exciting new experiences.</string>
+    <string name="maturity_6">Your Maturity Number 6 indicates you will become more nurturing and family-oriented as you mature. Responsibility, love, and creating harmony will define your later years and bring fulfillment.</string>
+    <string name="maturity_7">Your Maturity Number 7 indicates you will become more introspective and wisdom-seeking as you mature. Spiritual development, research, and inner exploration will be your focus in later life.</string>
+    <string name="maturity_8">Your Maturity Number 8 indicates you will become more successful and authoritative as you mature. Material accomplishment and recognition come with age as your business acumen peaks.</string>
+    <string name="maturity_9">Your Maturity Number 9 indicates you will become more humanitarian and compassionate as you mature. Wisdom, universal love, and service to others will define your later years.</string>
+    <string name="maturity_11">Your Maturity Number 11 indicates you will become more spiritually aware and inspirational as you mature. Your intuitive gifts will strengthen, and you may become a beacon of light for others.</string>
+    <string name="maturity_22">Your Maturity Number 22 indicates you will become a master builder as you mature. Large-scale achievements that benefit humanity become possible as your vision and discipline align.</string>
+    <string name="maturity_33">Your Maturity Number 33 indicates you will become a master healer and teacher as you mature. Your capacity for selfless love and spiritual service will reach its fullest expression.</string>
+
+    <!-- Balance Number Interpretations -->
+    <string name="balance_number_interpretation">Your Balance Number reveals how you handle difficult situations and find equilibrium during challenging times. It is derived from the initials of your name and shows your instinctive response to stress.</string>
+    <string name="balance_1">Balance Number 1 suggests you find equilibrium through taking independent action. When stressed, assert yourself and take charge of the situation. Trust your leadership abilities.</string>
+    <string name="balance_2">Balance Number 2 suggests you find equilibrium through cooperation and patience. When stressed, seek support from others and use diplomacy. Avoid making hasty decisions alone.</string>
+    <string name="balance_3">Balance Number 3 suggests you find equilibrium through creative expression. When stressed, express your feelings through art, writing, or conversation. Humor helps you cope.</string>
+    <string name="balance_4">Balance Number 4 suggests you find equilibrium through practical organization. When stressed, create structure and take methodical steps. Breaking problems into manageable pieces helps.</string>
+    <string name="balance_5">Balance Number 5 suggests you find equilibrium through flexibility and change. When stressed, try a new approach or perspective. Avoid rigid thinking and embrace adaptability.</string>
+    <string name="balance_6">Balance Number 6 suggests you find equilibrium through nurturing and responsibility. When stressed, focus on family and home. Helping others often helps you find your own balance.</string>
+    <string name="balance_7">Balance Number 7 suggests you find equilibrium through reflection and analysis. When stressed, take time alone to think things through. Trust your inner wisdom and intuition.</string>
+    <string name="balance_8">Balance Number 8 suggests you find equilibrium through taking control and organizing resources. When stressed, focus on practical solutions and use your executive abilities.</string>
+    <string name="balance_9">Balance Number 9 suggests you find equilibrium through compassion and broader perspective. When stressed, step back and see the bigger picture. Helping others transcends personal problems.</string>
+
+    <!-- Hidden Passion Interpretations -->
+    <string name="hidden_passion_interpretation">Your Hidden Passion Number indicates your strongest talents and abilities - the areas where you naturally excel and feel most passionate. It is the number that appears most frequently in your name.</string>
+    <string name="hidden_passion_1">Hidden Passion 1 reveals a strong drive for leadership and independence. You have exceptional talent for pioneering new ideas and standing out as an individual. Ambition and self-reliance are your greatest assets.</string>
+    <string name="hidden_passion_2">Hidden Passion 2 reveals exceptional sensitivity and diplomatic abilities. You have a gift for creating harmony and partnerships. Your intuition and cooperative nature are remarkable strengths.</string>
+    <string name="hidden_passion_3">Hidden Passion 3 reveals powerful creative and communication talents. You have a gift for self-expression, whether through speaking, writing, or artistic endeavors. Joy and optimism are your hallmarks.</string>
+    <string name="hidden_passion_4">Hidden Passion 4 reveals exceptional organizational and practical abilities. You have a gift for building solid foundations and working systematically. Discipline and reliability are your strengths.</string>
+    <string name="hidden_passion_5">Hidden Passion 5 reveals remarkable versatility and love of freedom. You have a gift for adapting to change and experiencing life fully. Your adventurous spirit and quick mind are assets.</string>
+    <string name="hidden_passion_6">Hidden Passion 6 reveals deep nurturing abilities and love of family. You have a gift for creating harmony and caring for others. Responsibility and domestic life are central to your fulfillment.</string>
+    <string name="hidden_passion_7">Hidden Passion 7 reveals powerful analytical and spiritual abilities. You have a gift for research, introspection, and seeking deeper truths. Wisdom and technical skill are your strengths.</string>
+    <string name="hidden_passion_8">Hidden Passion 8 reveals exceptional business and material talents. You have a gift for organization, leadership, and manifesting abundance. Authority and achievement come naturally.</string>
+    <string name="hidden_passion_9">Hidden Passion 9 reveals deep humanitarian instincts and broad vision. You have a gift for compassion, artistry, and serving the greater good. Wisdom and universal love are your strengths.</string>
+    <string name="no_hidden_passion">No clear Hidden Passion number was found in your name. This suggests a balanced distribution of energies across all numbers, indicating versatility and adaptability in many areas of life.</string>
+
+    <!-- Karmic Lessons Summary -->
+    <string name="no_karmic_lessons">You have no karmic lessons - all numbers are represented in your name. This indicates a well-rounded nature with access to all fundamental energies and suggests you have already learned many lessons in previous cycles.</string>
+
 </resources>

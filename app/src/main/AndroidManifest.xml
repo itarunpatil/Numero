@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".crash.CrashHandlerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Numero"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:process=":crash_handler" />
     </application>
 
 </manifest>

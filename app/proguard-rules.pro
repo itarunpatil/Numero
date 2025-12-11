@@ -47,3 +47,7 @@
 # With R8 full mode generic signatures are stripped for classes that are not
 # kept., keep the signature for Flow
 -keep,allowobfuscation,allowshrinking class kotlinx.coroutines.flow.Flow
+
+# Crash Handler - Keep crash handler classes to ensure proper stack traces
+-keep class com.numero.storm.crash.** { *; }
+-keepnames class com.numero.storm.crash.**
