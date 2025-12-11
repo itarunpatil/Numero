@@ -700,4 +700,200 @@
     <!-- Karmic Lessons Summary -->
     <string name="no_karmic_lessons">You have no karmic lessons - all numbers are represented in your name. This indicates a well-rounded nature with access to all fundamental energies and suggests you have already learned many lessons in previous cycles.</string>
 
+    <!-- Enhanced Analysis Detail Screen -->
+    <string name="what_this_means">What This Means For You</string>
+    <string name="quick_tip_prefix">Quick Tip:</string>
+    <string name="practical_application">Practical Application</string>
+    <string name="master_number_deep_dive">Master Number Deep Dive</string>
+    <string name="karmic_debt_deep_dive">Karmic Debt Deep Dive</string>
+    <string name="core_essence">Core Essence</string>
+    <string name="spiritual_significance">Spiritual Significance</string>
+    <string name="higher_purpose">Higher Purpose</string>
+    <string name="gifts">Gifts</string>
+    <string name="life_lesson">Life Lesson</string>
+    <string name="shadow_side">Shadow Side</string>
+    <string name="practical_advice">Practical Advice</string>
+    <string name="affirmation">Affirmation</string>
+    <string name="core_lesson">Core Lesson</string>
+    <string name="past_life_pattern">Past Life Pattern</string>
+    <string name="how_it_manifests">How It Manifests</string>
+    <string name="transformation_path">Transformation Path</string>
+    <string name="practical_guidance">Practical Guidance</string>
+    <string name="blessing_in_disguise">The Hidden Gift</string>
+    <string name="warning_signs">Warning Signs</string>
+    <string name="healing_affirmation">Healing Affirmation</string>
+
+    <!-- Brief explanations for Master Numbers and Karmic Debt -->
+    <string name="master_number_brief_explanation">Master Numbers carry heightened spiritual vibration and greater potential, along with greater challenges. They represent a higher octave of their single-digit root.</string>
+    <string name="karmic_debt_brief_explanation">Karmic Debt numbers indicate lessons carried from past lives that require attention and transformation in this lifetime. They are opportunities for soul growth.</string>
+
+    <!-- Educational explanations for each number type -->
+    <string name="life_path_education">Your Life Path is the most important number in your numerology chart. It reveals your life\'s purpose, the path you\'re destined to walk, and the lessons you\'re here to learn. Unlike other numbers that describe aspects of your personality or desires, the Life Path shows what you are here to DO and BECOME. Think of it as your cosmic job description for this lifetime.</string>
+    <string name="expression_education">Your Expression Number (also called Destiny Number) reveals your natural talents, abilities, and the way you express yourself in the world. It\'s calculated from all the letters in your full birth name. This number shows what you\'re naturally good at and how others experience you when you\'re at your best. It represents your potential and what you can achieve when you fully develop your innate gifts.</string>
+    <string name="soul_urge_education">Your Soul Urge Number (also called Heart\'s Desire) reveals what you truly want deep inside, often beyond what you show the world. It\'s calculated from the vowels in your name, which represent your inner voice. This number exposes your deepest motivations, what makes you feel fulfilled, and what you secretly yearn for. Understanding this number helps you align your outer life with your inner truth.</string>
+    <string name="personality_education">Your Personality Number reveals how others perceive you - the first impression you make and the image you project to the world. It\'s calculated from the consonants in your name. Think of it as your outer shell or public persona. While your Soul Urge is who you are inside, your Personality Number is what others see on the surface. It can also indicate what kind of people and situations you attract.</string>
+    <string name="birthday_education">Your Birthday Number is simply the day of the month you were born. While simpler than other core numbers, it reveals a special talent or gift you carry - something that comes naturally to you and can help you fulfill your Life Path. It adds a specific flavor to your overall numerology profile and indicates abilities that are especially easy for you to develop and express.</string>
+    <string name="maturity_education">Your Maturity Number reveals who you are becoming as you grow older and wiser. It\'s the sum of your Life Path and Expression Numbers, representing the true self that emerges in the second half of life. Around age 35-45, this number\'s influence becomes stronger, and you may find yourself naturally developing these qualities. It shows what you\'re growing into, not what you started as.</string>
+    <string name="balance_education">Your Balance Number shows how you instinctively handle stress, conflict, and challenging situations. It\'s derived from the initials of your name. When life throws difficulties at you, this is the energy you naturally tap into for equilibrium. Understanding your Balance Number helps you consciously use these tendencies effectively rather than reactively during tough times.</string>
+    <string name="hidden_passion_education">Your Hidden Passion Number reveals your most intense talents and the activities that truly excite you. It\'s the number that appears most frequently in your name. This number points to abilities you may have developed in past lives or areas where you have exceptional natural ability. When you engage with this number\'s energy, you feel most alive and passionate.</string>
+    <string name="general_number_education">Each number in numerology carries specific vibrations and meanings. Understanding these numbers helps you recognize patterns in your life, make better decisions, and align with your natural strengths. Numbers are not about prediction but about understanding energy patterns.</string>
+
+    <!-- Quick tips for each number type -->
+    <string name="life_path_quick_tip">Your Life Path number is lifelong - it doesn\'t change. Focus on its lessons throughout your life, especially during major decisions.</string>
+    <string name="expression_quick_tip">Your Expression Number talents are natural gifts. You don\'t need to force them - they emerge naturally when you\'re being authentic.</string>
+    <string name="soul_urge_quick_tip">When you\'re feeling unfulfilled, check if your life aligns with your Soul Urge. Often, dissatisfaction means we\'re ignoring our heart\'s true desires.</string>
+    <string name="personality_quick_tip">Your Personality Number shows what you attract. If you\'re drawing unwanted situations, examine how you might be unconsciously projecting this energy.</string>
+    <string name="birthday_quick_tip">Your birthday talent is a gift. Make sure you\'re using it! Many people ignore their easiest natural abilities.</string>
+    <string name="maturity_quick_tip">Don\'t worry if you don\'t resonate with your Maturity Number yet - it becomes more relevant after your mid-30s.</string>
+    <string name="balance_quick_tip">During stress, consciously apply your Balance Number\'s approach. It\'s your natural equilibrium tool.</string>
+    <string name="hidden_passion_quick_tip">Make time for activities related to your Hidden Passion - they recharge your energy and bring joy.</string>
+    <string name="general_quick_tip">All numbers in your chart work together as a system. No single number defines you completely.</string>
+
+    <!-- Practical tips for each number type -->
+    <string name="life_path_practical_tip">To work with your Life Path energy: 1) Identify life decisions that align with this number\'s themes. 2) During challenges, ask how this situation serves your Life Path lessons. 3) Seek career and relationships that support your life purpose. 4) Remember that challenges often come to strengthen your Life Path qualities.</string>
+    <string name="expression_practical_tip">To develop your Expression Number talents: 1) Notice what activities feel effortless for you - these likely connect to your Expression energy. 2) Seek opportunities to use these natural abilities. 3) Don\'t undervalue gifts that come easily - they\'re still valuable to others. 4) Your Expression shows how you can best contribute to the world.</string>
+    <string name="soul_urge_practical_tip">To honor your Soul Urge: 1) Make time for what truly matters to your heart, even if it seems impractical. 2) When making major decisions, check if options align with your Soul Urge. 3) If something feels wrong despite looking right on paper, your Soul Urge may be speaking. 4) Share your true desires with trusted people.</string>
+    <string name="personality_practical_tip">To work with your Personality Number: 1) Recognize how you come across to others may differ from how you feel inside. 2) Use your Personality strengths consciously in first impressions. 3) Be aware of the expectations your image creates. 4) Ensure your outer persona serves your inner truth.</string>
+    <string name="birthday_practical_tip">To use your Birthday gift: 1) Identify which talents connect to your birthday number. 2) Look for ways to incorporate this gift into your work and relationships. 3) This ability can help you fulfill your Life Path more easily. 4) Don\'t take this natural talent for granted - develop it further.</string>
+    <string name="maturity_practical_tip">To prepare for your Maturity Number: 1) Study this number\'s qualities and consider how they might express through you. 2) Notice if these traits are already beginning to emerge. 3) Make peace with becoming this person - it\'s your authentic evolution. 4) Seek role models who embody this number well.</string>
+    <string name="balance_practical_tip">To use your Balance Number effectively: 1) During stress, consciously apply this number\'s approach. 2) Create rituals or practices that help you access this energy. 3) Recognize when you\'re out of balance and need this energy. 4) Teach yourself to reach for this tool automatically.</string>
+    <string name="hidden_passion_practical_tip">To engage your Hidden Passion: 1) Schedule regular time for activities that connect to this number. 2) Consider how you might incorporate this passion into your work. 3) Recognize that passion in this area is a sign of talent. 4) Share this passion with others who appreciate it.</string>
+    <string name="general_practical_tip">To work with any numerology number: 1) Study the number\'s positive and challenging aspects. 2) Notice how it manifests in your life. 3) Consciously develop the positive qualities. 4) Use challenging aspects as growth opportunities.</string>
+
+    <!-- Lucky Days Screen -->
+    <string name="lucky_days">Lucky Days</string>
+    <string name="lucky_profile">Your Lucky Profile</string>
+    <string name="lucky_numbers">Lucky Numbers</string>
+    <string name="lucky_days_of_week">Lucky Days of Week</string>
+    <string name="lucky_dates">Lucky Dates</string>
+    <string name="lucky_months">Lucky Months</string>
+    <string name="lucky_gemstones">Lucky Gemstones</string>
+    <string name="lucky_colors">Lucky Colors</string>
+    <string name="lucky_directions">Favorable Directions</string>
+    <string name="favorable_activities">Favorable Activities</string>
+    <string name="planetary_influence">Planetary Influence</string>
+    <string name="elemental_affinity">Elemental Affinity</string>
+    <string name="monthly_favorable_days">Favorable Days This Month</string>
+    <string name="excellent_days">Excellent Days</string>
+    <string name="good_days">Good Days</string>
+    <string name="challenging_days">Days to Be Careful</string>
+    <string name="month_theme">Month Theme</string>
+    <string name="month_advice">Monthly Advice</string>
+    <string name="best_for">Best For</string>
+    <string name="caution">Caution</string>
+    <string name="today">Today</string>
+    <string name="current">Current</string>
+    <string name="recommendations">Recommendations:</string>
+    <string name="favorable_for">Favorable for:</string>
+
+    <!-- Name Analysis Screen -->
+    <string name="name_analysis">Name Analysis</string>
+    <string name="letter_breakdown">Letter Breakdown</string>
+    <string name="inclusion_chart">Inclusion Chart</string>
+    <string name="planes_of_expression">Planes of Expression</string>
+    <string name="physical_plane">Physical Plane</string>
+    <string name="mental_plane">Mental Plane</string>
+    <string name="emotional_plane">Emotional Plane</string>
+    <string name="intuitive_plane">Intuitive Plane</string>
+    <string name="cornerstone_letter">Cornerstone</string>
+    <string name="capstone_letter">Capstone</string>
+    <string name="first_vowel_letter">First Vowel</string>
+    <string name="cornerstone_explanation">The first letter of your first name - how you approach new situations</string>
+    <string name="capstone_explanation">The last letter of your first name - how you bring things to completion</string>
+    <string name="first_vowel_explanation">Your first vowel - your instinctive, gut-level reaction</string>
+    <string name="missing_number">Missing</string>
+    <string name="present_number">Present</string>
+    <string name="abundant_number">Abundant</string>
+    <string name="letter_value">Value: %d</string>
+    <string name="vowel_indicator">Vowel</string>
+    <string name="consonant_indicator">Consonant</string>
+
+    <!-- Yearly Forecast Screen -->
+    <string name="yearly_forecast">Yearly Forecast</string>
+    <string name="monthly_breakdown">Monthly Breakdown</string>
+    <string name="year_theme">Year Theme</string>
+    <string name="key_themes">Key Themes</string>
+    <string name="opportunities">Opportunities</string>
+    <string name="year_advice">Guidance</string>
+    <string name="month_focus">Focus for %s</string>
+
+    <!-- Universal cycles explanations -->
+    <string name="universal_day_explanation">The Universal Day number affects everyone on Earth. It sets the backdrop energy for the day that your Personal Day operates within. When your Personal Day aligns with the Universal Day, the energy is intensified.</string>
+    <string name="universal_month_explanation">The Universal Month affects collective consciousness and global events. Your Personal Month operates within this larger context.</string>
+    <string name="universal_year_explanation">The Universal Year sets the theme for the entire world. Major global events and collective shifts often align with this energy. In %d, we are in a Universal Year %d.</string>
+
+    <!-- Relationship dynamics -->
+    <string name="relationship_dynamics">Relationship Dynamics</string>
+    <string name="communication_style">Communication Style</string>
+    <string name="conflict_approach">Conflict Approach</string>
+    <string name="growth_opportunities">Growth Opportunities</string>
+    <string name="shared_values">Shared Values</string>
+    <string name="potential_friction">Potential Friction Points</string>
+    <string name="harmony_tips">Tips for Harmony</string>
+
+    <!-- Advanced compatibility -->
+    <string name="life_path_compatibility">Life Path Compatibility</string>
+    <string name="expression_compatibility">Expression Compatibility</string>
+    <string name="soul_urge_compatibility">Soul Urge Compatibility</string>
+    <string name="personality_compatibility">Personality Compatibility</string>
+    <string name="overall_harmony">Overall Harmony</string>
+    <string name="complementary_energies">Complementary Energies</string>
+    <string name="challenging_aspects">Challenging Aspects</string>
+
+    <!-- Month names -->
+    <string name="month_january">January</string>
+    <string name="month_february">February</string>
+    <string name="month_march">March</string>
+    <string name="month_april">April</string>
+    <string name="month_may">May</string>
+    <string name="month_june">June</string>
+    <string name="month_july">July</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">October</string>
+    <string name="month_november">November</string>
+    <string name="month_december">December</string>
+
+    <!-- Navigation and UI -->
+    <string name="tap_to_expand">Tap to expand</string>
+    <string name="tap_to_collapse">Tap to collapse</string>
+    <string name="learn_more">Learn More</string>
+    <string name="view_details">View Details</string>
+    <string name="see_all">See All</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
+    <string name="loading">Loading…</string>
+    <string name="error_loading">Error loading data</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_data_available">No data available</string>
+
+    <!-- Home Screen Guidance -->
+    <string name="discover_more">Discover More</string>
+    <string name="learn_numerology">Learn</string>
+    <string name="what_is_numerology">What is Numerology?</string>
+    <string name="numerology_intro">Numerology is an ancient study of the mystical relationship between numbers and life events. Based on your birth date and name, numerology reveals insights about your personality, life purpose, and potential.</string>
+    <string name="tap_to_learn">Tap to learn more</string>
+    <string name="life_path_quick_desc">Your life\'s purpose and the journey you\'re meant to take</string>
+    <string name="expression_quick_desc">Your natural talents, abilities, and how you express yourself</string>
+    <string name="soul_urge_quick_desc">Your inner desires, motivations, and what truly fulfills you</string>
+    <string name="daily_tip">Tip of the Day</string>
+    <string name="daily_tip_1">Your Life Path number reveals your life\'s purpose. Embrace its energy to align with your true path.</string>
+    <string name="daily_tip_2">Master Numbers (11, 22, 33) carry intensified energy. If you have one, you\'re here for a special purpose.</string>
+    <string name="daily_tip_3">Personal Years run in 9-year cycles. Understanding your current cycle helps you flow with life\'s rhythm.</string>
+    <string name="daily_tip_4">Your Expression number shows your talents. Developing these abilities leads to greater fulfillment.</string>
+    <string name="daily_tip_5">Karmic Debt numbers indicate lessons from past lives. Working through them accelerates spiritual growth.</string>
+
+    <!-- Advanced Feature Descriptions -->
+    <string name="name_analysis_desc">Discover the hidden meaning in every letter of your name</string>
+    <string name="yearly_forecast_desc">See your personal year cycle and monthly predictions</string>
+    <string name="lucky_days_desc">Find your lucky numbers, colors, and favorable days</string>
+
+    <!-- Home screen guidance for new users -->
+    <string name="getting_started_title">Getting Started</string>
+    <string name="getting_started_description">Welcome to your numerology journey! Start by creating a profile with your name and birth date. We\'ll calculate your core numbers and provide detailed insights into your life path, personality, and potential.</string>
+    <string name="what_is_numerology">What is Numerology?</string>
+    <string name="numerology_explanation">Numerology is the ancient study of numbers and their influence on human life. Each number carries specific vibrations and meanings. By understanding the numbers in your name and birth date, you can gain insights into your personality, life purpose, and potential.</string>
+    <string name="your_daily_insight">Your Daily Insight</string>
+    <string name="daily_insight_explanation">Your Personal Day number combines with the Universal Day to create your unique daily energy. Use this insight to align your activities with the natural flow of the day.</string>
+
 </resources>

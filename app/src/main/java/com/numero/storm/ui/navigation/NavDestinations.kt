@@ -53,6 +53,27 @@ sealed class NavDestination(val route: String) {
     data object Settings : NavDestination("settings")
 
     data object About : NavDestination("about")
+
+    data object NameAnalysis : NavDestination("name-analysis/{profileId}") {
+        fun createRoute(profileId: Long) = "name-analysis/$profileId"
+        val arguments = listOf(
+            navArgument("profileId") { type = NavType.LongType }
+        )
+    }
+
+    data object YearlyForecast : NavDestination("yearly-forecast/{profileId}") {
+        fun createRoute(profileId: Long) = "yearly-forecast/$profileId"
+        val arguments = listOf(
+            navArgument("profileId") { type = NavType.LongType }
+        )
+    }
+
+    data object LuckyDays : NavDestination("lucky-days/{profileId}") {
+        fun createRoute(profileId: Long) = "lucky-days/$profileId"
+        val arguments = listOf(
+            navArgument("profileId") { type = NavType.LongType }
+        )
+    }
 }
 
 enum class NumberType(val displayName: String) {

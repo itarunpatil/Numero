@@ -31,13 +31,20 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.CalendarMonth
+import androidx.compose.material.icons.filled.Diamond
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.TextFields
 import androidx.compose.material.icons.filled.Today
+import androidx.compose.material.icons.filled.TrendingUp
+import androidx.compose.material.icons.outlined.HelpOutline
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.School
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -92,6 +99,9 @@ fun HomeScreen(
     onNavigateToDaily: () -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToCreateProfile: () -> Unit,
+    onNavigateToNameAnalysis: ((Long) -> Unit)? = null,
+    onNavigateToYearlyForecast: ((Long) -> Unit)? = null,
+    onNavigateToLuckyDays: ((Long) -> Unit)? = null,
     viewModel: HomeViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -133,7 +143,10 @@ fun HomeScreen(
                 onNavigateToProfiles = onNavigateToProfiles,
                 onNavigateToCompatibility = onNavigateToCompatibility,
                 onNavigateToDaily = onNavigateToDaily,
-                onNavigateToCreateProfile = onNavigateToCreateProfile
+                onNavigateToCreateProfile = onNavigateToCreateProfile,
+                onNavigateToNameAnalysis = onNavigateToNameAnalysis,
+                onNavigateToYearlyForecast = onNavigateToYearlyForecast,
+                onNavigateToLuckyDays = onNavigateToLuckyDays
             )
         }
     }
@@ -147,7 +160,10 @@ private fun HomeContent(
     onNavigateToProfiles: () -> Unit,
     onNavigateToCompatibility: () -> Unit,
     onNavigateToDaily: () -> Unit,
-    onNavigateToCreateProfile: () -> Unit
+    onNavigateToCreateProfile: () -> Unit,
+    onNavigateToNameAnalysis: ((Long) -> Unit)? = null,
+    onNavigateToYearlyForecast: ((Long) -> Unit)? = null,
+    onNavigateToLuckyDays: ((Long) -> Unit)? = null
 ) {
     LazyColumn(
         modifier = modifier.fillMaxSize(),
@@ -193,6 +209,20 @@ private fun HomeContent(
             )
         }
 
+        // Advanced Features Section (only if primary profile exists)
+        if (uiState.primaryProfile != null) {
+            item {
+                Spacer(modifier = Modifier.height(16.dp))
+                SectionHeader(title = stringResource(R.string.discover_more))
+                AdvancedFeaturesRow(
+                    profileId = uiState.primaryProfile.id,
+                    onNavigateToNameAnalysis = onNavigateToNameAnalysis,
+                    onNavigateToYearlyForecast = onNavigateToYearlyForecast,
+                    onNavigateToLuckyDays = onNavigateToLuckyDays
+                )
+            }
+        }
+
         // All Profiles
         if (uiState.profiles.isNotEmpty()) {
             item {
@@ -224,6 +254,19 @@ private fun HomeContent(
                     }
                 }
             }
+        }
+
+        // Educational Section for New Users
+        item {
+            Spacer(modifier = Modifier.height(16.dp))
+            SectionHeader(title = stringResource(R.string.learn_numerology))
+            LearnNumerologyCard()
+        }
+
+        // Daily Tip
+        item {
+            Spacer(modifier = Modifier.height(16.dp))
+            DailyTipCard()
         }
     }
 }
@@ -653,6 +696,279 @@ private fun EmptyProfilesCard(onCreateProfile: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center
             )
+        }
+    }
+}
+
+@Composable
+private fun AdvancedFeaturesRow(
+    profileId: Long,
+    onNavigateToNameAnalysis: ((Long) -> Unit)?,
+    onNavigateToYearlyForecast: ((Long) -> Unit)?,
+    onNavigateToLuckyDays: ((Long) -> Unit)?
+) {
+    LazyRow(
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        if (onNavigateToNameAnalysis != null) {
+            item {
+                AdvancedFeatureCard(
+                    icon = Icons.Default.TextFields,
+                    title = stringResource(R.string.name_analysis),
+                    description = stringResource(R.string.name_analysis_desc),
+                    accentColor = MaterialTheme.colorScheme.primary,
+                    onClick = { onNavigateToNameAnalysis(profileId) }
+                )
+            }
+        }
+
+        if (onNavigateToYearlyForecast != null) {
+            item {
+                AdvancedFeatureCard(
+                    icon = Icons.Default.TrendingUp,
+                    title = stringResource(R.string.yearly_forecast),
+                    description = stringResource(R.string.yearly_forecast_desc),
+                    accentColor = MaterialTheme.colorScheme.tertiary,
+                    onClick = { onNavigateToYearlyForecast(profileId) }
+                )
+            }
+        }
+
+        if (onNavigateToLuckyDays != null) {
+            item {
+                AdvancedFeatureCard(
+                    icon = Icons.Default.Diamond,
+                    title = stringResource(R.string.lucky_days),
+                    description = stringResource(R.string.lucky_days_desc),
+                    accentColor = MaterialTheme.colorScheme.secondary,
+                    onClick = { onNavigateToLuckyDays(profileId) }
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun AdvancedFeatureCard(
+    icon: ImageVector,
+    title: String,
+    description: String,
+    accentColor: Color,
+    onClick: () -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .width(160.dp)
+            .clickable(onClick = onClick),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(RoundedCornerShape(10.dp))
+                    .background(accentColor.copy(alpha = 0.1f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = Modifier.size(20.dp),
+                    tint = accentColor
+                )
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.SemiBold
+            )
+
+            Spacer(modifier = Modifier.height(4.dp))
+
+            Text(
+                text = description,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
+        }
+    }
+}
+
+@Composable
+private fun LearnNumerologyCard() {
+    var expanded by remember { mutableStateOf(false) }
+
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp)
+            .clickable { expanded = !expanded },
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f)
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Outlined.School,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.secondary,
+                        modifier = Modifier.size(24.dp)
+                    )
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Text(
+                        text = stringResource(R.string.what_is_numerology),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+                Icon(
+                    imageVector = Icons.Outlined.HelpOutline,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(20.dp)
+                )
+            }
+
+            AnimatedVisibility(visible = expanded) {
+                Column(modifier = Modifier.padding(top = 12.dp)) {
+                    Text(
+                        text = stringResource(R.string.numerology_intro),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+
+                    Spacer(modifier = Modifier.height(12.dp))
+
+                    // Core Numbers Quick Guide
+                    CoreNumberGuideItem(
+                        number = "Life Path",
+                        description = stringResource(R.string.life_path_quick_desc)
+                    )
+                    CoreNumberGuideItem(
+                        number = "Expression",
+                        description = stringResource(R.string.expression_quick_desc)
+                    )
+                    CoreNumberGuideItem(
+                        number = "Soul Urge",
+                        description = stringResource(R.string.soul_urge_quick_desc)
+                    )
+                }
+            }
+
+            if (!expanded) {
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = stringResource(R.string.tap_to_learn),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun CoreNumberGuideItem(number: String, description: String) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 4.dp),
+        verticalAlignment = Alignment.Top
+    ) {
+        Surface(
+            color = MaterialTheme.colorScheme.primary.copy(alpha = 0.2f),
+            shape = RoundedCornerShape(4.dp)
+        ) {
+            Text(
+                text = number,
+                style = MaterialTheme.typography.labelSmall,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp)
+            )
+        }
+        Spacer(modifier = Modifier.width(8.dp))
+        Text(
+            text = description,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.weight(1f)
+        )
+    }
+}
+
+@Composable
+private fun DailyTipCard() {
+    val tips = listOf(
+        R.string.daily_tip_1,
+        R.string.daily_tip_2,
+        R.string.daily_tip_3,
+        R.string.daily_tip_4,
+        R.string.daily_tip_5
+    )
+    val today = java.time.LocalDate.now().dayOfYear
+    val tipIndex = today % tips.size
+
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.5f)
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.Top
+        ) {
+            Icon(
+                imageVector = Icons.Default.Lightbulb,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.tertiary,
+                modifier = Modifier.size(24.dp)
+            )
+            Spacer(modifier = Modifier.width(12.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.daily_tip),
+                    style = MaterialTheme.typography.labelMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.tertiary
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = stringResource(tips[tipIndex]),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
         }
     }
 }

@@ -13,7 +13,10 @@ import com.numero.storm.ui.screen.compatibility.CompatibilityResultScreen
 import com.numero.storm.ui.screen.compatibility.CompatibilityScreen
 import com.numero.storm.ui.screen.cycles.PersonalCyclesScreen
 import com.numero.storm.ui.screen.daily.DailyNumbersScreen
+import com.numero.storm.ui.screen.forecast.YearlyForecastScreen
 import com.numero.storm.ui.screen.home.HomeScreen
+import com.numero.storm.ui.screen.luckydays.LuckyDaysScreen
+import com.numero.storm.ui.screen.nameanalysis.NameAnalysisScreen
 import com.numero.storm.ui.screen.onboarding.OnboardingScreen
 import com.numero.storm.ui.screen.profile.CreateProfileScreen
 import com.numero.storm.ui.screen.profile.EditProfileScreen
@@ -60,6 +63,15 @@ fun NumeroNavHost(
                 },
                 onNavigateToCreateProfile = {
                     navController.navigate(NavDestination.CreateProfile.route)
+                },
+                onNavigateToNameAnalysis = { profileId ->
+                    navController.navigate(NavDestination.NameAnalysis.createRoute(profileId))
+                },
+                onNavigateToYearlyForecast = { profileId ->
+                    navController.navigate(NavDestination.YearlyForecast.createRoute(profileId))
+                },
+                onNavigateToLuckyDays = { profileId ->
+                    navController.navigate(NavDestination.LuckyDays.createRoute(profileId))
                 }
             )
         }
@@ -189,6 +201,39 @@ fun NumeroNavHost(
 
         composable(NavDestination.About.route) {
             AboutScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(
+            route = NavDestination.NameAnalysis.route,
+            arguments = NavDestination.NameAnalysis.arguments
+        ) { backStackEntry ->
+            val profileId = backStackEntry.arguments?.getLong("profileId") ?: return@composable
+            NameAnalysisScreen(
+                profileId = profileId,
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(
+            route = NavDestination.YearlyForecast.route,
+            arguments = NavDestination.YearlyForecast.arguments
+        ) { backStackEntry ->
+            val profileId = backStackEntry.arguments?.getLong("profileId") ?: return@composable
+            YearlyForecastScreen(
+                profileId = profileId,
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(
+            route = NavDestination.LuckyDays.route,
+            arguments = NavDestination.LuckyDays.arguments
+        ) { backStackEntry ->
+            val profileId = backStackEntry.arguments?.getLong("profileId") ?: return@composable
+            LuckyDaysScreen(
+                profileId = profileId,
                 onNavigateBack = { navController.popBackStack() }
             )
         }
