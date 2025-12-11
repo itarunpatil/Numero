@@ -37,8 +37,7 @@ class NameAnalysisViewModel @Inject constructor(
             _uiState.update { it.copy(isLoading = true, error = null) }
 
             try {
-                val profile = profileRepository.getProfileById(profileId)
-                if (profile == null) {
+                val profileData = profileRepository.getProfileById(profileId) ?: run {
                     _uiState.update {
                         it.copy(isLoading = false, error = "Profile not found")
                     }
@@ -48,7 +47,7 @@ class NameAnalysisViewModel @Inject constructor(
                 val settings = settingsRepository.getSettings().first()
                 val system = settings.numerologySystem
 
-                val fullName = profile.fullName
+                val fullName = profileData.fullName
                 val analysis = NameAnalysis.analyzeFullName(fullName, system)
 
                 _uiState.update {

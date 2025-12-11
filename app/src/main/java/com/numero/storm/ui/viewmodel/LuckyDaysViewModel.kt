@@ -42,19 +42,18 @@ class LuckyDaysViewModel @Inject constructor(
             _uiState.update { it.copy(isLoading = true, error = null) }
 
             try {
-                val profile = profileRepository.getProfileById(profileId)
-                if (profile == null) {
+                val profileData = profileRepository.getProfileById(profileId) ?: run {
                     _uiState.update {
                         it.copy(isLoading = false, error = "Profile not found")
                     }
                     return@launch
                 }
 
-                val birthDate = profile.birthDate
+                val birthDate = profileData.birthDate
 
                 // Calculate core numbers needed for lucky profile
                 val lifePathNumber = DateCalculator.calculateLifePathNumber(birthDate).finalNumber
-                val expressionNumber = NameCalculator.calculateExpressionNumber(profile.fullName).finalNumber
+                val expressionNumber = NameCalculator.calculateExpressionNumber(profileData.fullName).finalNumber
                 val birthdayNumber = birthDate.dayOfMonth
 
                 // Calculate lucky profile
@@ -82,7 +81,7 @@ class LuckyDaysViewModel @Inject constructor(
                 _uiState.update {
                     it.copy(
                         isLoading = false,
-                        profileName = profile.fullName,
+                        profileName = profileData.fullName,
                         luckyProfile = luckyProfile,
                         currentMonthDays = currentMonthDays,
                         nextMonthDays = nextMonthDays,

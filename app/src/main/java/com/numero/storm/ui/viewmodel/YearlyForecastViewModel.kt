@@ -37,8 +37,7 @@ class YearlyForecastViewModel @Inject constructor(
             _uiState.update { it.copy(isLoading = true, error = null) }
 
             try {
-                val profile = profileRepository.getProfileById(profileId)
-                if (profile == null) {
+                val profileData = profileRepository.getProfileById(profileId) ?: run {
                     _uiState.update {
                         it.copy(isLoading = false, error = "Profile not found")
                     }
@@ -46,7 +45,7 @@ class YearlyForecastViewModel @Inject constructor(
                 }
 
                 val currentYear = LocalDate.now().year
-                val birthDate = profile.birthDate
+                val birthDate = profileData.birthDate
 
                 // Calculate personal year
                 val personalYear = DateCalculator.calculatePersonalYear(birthDate, currentYear)
