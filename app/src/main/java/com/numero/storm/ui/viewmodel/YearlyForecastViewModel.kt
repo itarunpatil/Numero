@@ -37,7 +37,7 @@ class YearlyForecastViewModel @Inject constructor(
             _uiState.update { it.copy(isLoading = true, error = null) }
 
             try {
-                val profileData = profileRepository.getProfileById(profileId) ?: run {
+                val profileData = profileRepository.getProfileByIdOnce(profileId) ?: run {
                     _uiState.update {
                         it.copy(isLoading = false, error = "Profile not found")
                     }

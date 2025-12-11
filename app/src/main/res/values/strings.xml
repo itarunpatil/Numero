@@ -818,7 +818,7 @@
     <!-- Universal cycles explanations -->
     <string name="universal_day_explanation">The Universal Day number affects everyone on Earth. It sets the backdrop energy for the day that your Personal Day operates within. When your Personal Day aligns with the Universal Day, the energy is intensified.</string>
     <string name="universal_month_explanation">The Universal Month affects collective consciousness and global events. Your Personal Month operates within this larger context.</string>
-    <string name="universal_year_explanation">The Universal Year sets the theme for the entire world. Major global events and collective shifts often align with this energy. In %d, we are in a Universal Year %d.</string>
+    <string name="universal_year_explanation" formatted="false">The Universal Year sets the theme for the entire world. Major global events and collective shifts often align with this energy. In %d, we are in a Universal Year %d.</string>
 
     <!-- Relationship dynamics -->
     <string name="relationship_dynamics">Relationship Dynamics</string>
