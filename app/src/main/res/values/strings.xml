@@ -889,7 +889,6 @@
     <!-- Home screen guidance for new users -->
     <string name="getting_started_title">Getting Started</string>
     <string name="getting_started_description">Welcome to your numerology journey! Start by creating a profile with your name and birth date. We\'ll calculate your core numbers and provide detailed insights into your life path, personality, and potential.</string>
-    <string name="what_is_numerology">What is Numerology?</string>
     <string name="numerology_explanation">Numerology is the ancient study of numbers and their influence on human life. Each number carries specific vibrations and meanings. By understanding the numbers in your name and birth date, you can gain insights into your personality, life purpose, and potential.</string>
     <string name="your_daily_insight">Your Daily Insight</string>
     <string name="daily_insight_explanation">Your Personal Day number combines with the Universal Day to create your unique daily energy. Use this insight to align your activities with the natural flow of the day.</string>
