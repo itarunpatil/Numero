@@ -45,11 +45,11 @@ object LuckyDaysCalculator {
     ): MonthlyFavorableDays {
         val days = mutableListOf<FavorableDay>()
         val personalYear = DateCalculator.calculatePersonalYear(birthDate, yearMonth.year)
-        val personalMonth = DateCalculator.calculatePersonalMonth(birthDate, yearMonth.year, yearMonth.monthValue)
+        val personalMonth = DateCalculator.calculatePersonalMonth(personalYear, yearMonth.monthValue)
 
         for (day in 1..yearMonth.lengthOfMonth()) {
             val date = yearMonth.atDay(day)
-            val personalDay = DateCalculator.calculatePersonalDay(birthDate, date)
+            val personalDay = DateCalculator.calculatePersonalDay(personalMonth, day)
             val universalDay = DateCalculator.calculateUniversalDay(date)
 
             val favorability = calculateDayFavorability(

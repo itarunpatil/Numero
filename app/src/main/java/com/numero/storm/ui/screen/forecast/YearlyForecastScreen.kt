@@ -70,7 +70,7 @@ import com.numero.storm.ui.components.LoadingIndicator
 import com.numero.storm.ui.components.NumberDisplay
 import com.numero.storm.ui.components.NumberDisplaySize
 import com.numero.storm.ui.components.NumeroTopBar
-import com.numero.storm.ui.theme.getNumberColor
+import com.numero.storm.ui.components.getNumberColor
 import com.numero.storm.ui.viewmodel.YearlyForecastViewModel
 import java.time.Month
 import java.time.format.TextStyle

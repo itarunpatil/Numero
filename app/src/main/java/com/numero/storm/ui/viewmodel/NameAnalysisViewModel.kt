@@ -70,6 +70,7 @@ class NameAnalysisViewModel @Inject constructor(
         return when (this) {
             NumerologySystem.PYTHAGOREAN -> com.numero.storm.domain.calculator.NumerologySystem.PYTHAGOREAN
             NumerologySystem.CHALDEAN -> com.numero.storm.domain.calculator.NumerologySystem.CHALDEAN
+            else -> com.numero.storm.domain.calculator.NumerologySystem.PYTHAGOREAN
         }
     }
 }
