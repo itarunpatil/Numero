@@ -2,11 +2,11 @@ package com.numero.storm.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.numero.storm.data.model.NumerologySystem
 import com.numero.storm.data.repository.ProfileRepository
 import com.numero.storm.data.repository.SettingsRepository
 import com.numero.storm.domain.calculator.FullNameAnalysis
 import com.numero.storm.domain.calculator.NameAnalysis
+import com.numero.storm.domain.calculator.NumerologySystem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -46,7 +46,7 @@ class NameAnalysisViewModel @Inject constructor(
                 }
 
                 val settings = settingsRepository.getSettings().first()
-                val system = settings.numerologySystem.toDomainSystem()
+                val system = settings.numerologySystem
 
                 val fullName = profile.fullName
                 val analysis = NameAnalysis.analyzeFullName(fullName, system)
@@ -66,11 +66,4 @@ class NameAnalysisViewModel @Inject constructor(
         }
     }
 
-    private fun NumerologySystem.toDomainSystem(): com.numero.storm.domain.calculator.NumerologySystem {
-        return when (this) {
-            NumerologySystem.PYTHAGOREAN -> com.numero.storm.domain.calculator.NumerologySystem.PYTHAGOREAN
-            NumerologySystem.CHALDEAN -> com.numero.storm.domain.calculator.NumerologySystem.CHALDEAN
-            else -> com.numero.storm.domain.calculator.NumerologySystem.PYTHAGOREAN
-        }
-    }
 }

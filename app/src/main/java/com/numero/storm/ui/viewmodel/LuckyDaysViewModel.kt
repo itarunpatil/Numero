@@ -7,7 +7,7 @@ import com.numero.storm.domain.calculator.DateCalculator
 import com.numero.storm.domain.calculator.LuckyDaysCalculator
 import com.numero.storm.domain.calculator.LuckyProfile
 import com.numero.storm.domain.calculator.MonthlyFavorableDays
-import com.numero.storm.domain.calculator.NameAnalysis
+import com.numero.storm.domain.calculator.NameCalculator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -54,7 +54,7 @@ class LuckyDaysViewModel @Inject constructor(
 
                 // Calculate core numbers needed for lucky profile
                 val lifePathNumber = DateCalculator.calculateLifePathNumber(birthDate).finalNumber
-                val expressionNumber = NameAnalysis.analyzeFullName(profile.fullName).totalValue
+                val expressionNumber = NameCalculator.calculateExpressionNumber(profile.fullName).finalNumber
                 val birthdayNumber = birthDate.dayOfMonth
 
                 // Calculate lucky profile
